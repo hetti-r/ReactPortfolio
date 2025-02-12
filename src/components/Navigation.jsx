@@ -1,7 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
+  const location = useLocation();
+  const getBannerText = () => {
+    switch (location.pathname) {
+      case '/projects':
+        return 'My Projects';
+      default:
+        return 'Welcome to My Portfolio';
+    }
+  };
+
   return (
     <div>
       <header>
@@ -30,7 +40,7 @@ const Navigation = () => {
           </nav>
 
           <div className="banner-text">
-            <p>Welcome to My Portfolio</p>
+            <p>{getBannerText()}</p>
           </div>
         </div>
       </header>
