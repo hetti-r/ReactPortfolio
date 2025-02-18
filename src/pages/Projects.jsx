@@ -43,17 +43,31 @@ const Projects = () => {
   return (
     <>
       <section id="projects">
-        <h2>Projects</h2>
-        <div>
-          <label>
-            Filter by type:
-            <select value={filter} onChange={handleFilterChange}>
-              <option value="all">All</option>
-              <option value="game">Game</option>
-              <option value="film">Film</option>
-              <option value="application">Application</option>
-            </select>
-          </label>
+        <div className="filter-tags">
+          <button
+            className={`filter-tag ${filter === 'all' ? 'active' : ''}`}
+            onClick={() => setFilter('all')}
+          >
+            All
+          </button>
+          <button
+            className={`filter-tag ${filter === 'game' ? 'active' : ''}`}
+            onClick={() => setFilter('game')}
+          >
+            Games
+          </button>
+          <button
+            className={`filter-tag ${filter === 'film' ? 'active' : ''}`}
+            onClick={() => setFilter('film')}
+          >
+            Films
+          </button>
+          <button
+            className={`filter-tag ${filter === 'application' ? 'active' : ''}`}
+            onClick={() => setFilter('application')}
+          >
+            Apps
+          </button>
         </div>
         <div className="boxcontainer">
           {filteredProjects.map((project, index) => (

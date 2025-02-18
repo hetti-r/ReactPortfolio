@@ -30,5 +30,21 @@
     "description": "I worked as a writer/director/producer as well as the animator and it was the final work for my course in Voionmaa Institute. The film was selected for several film festivals including Tampere film festival.I worked as a writer/director/producer as well as the animator and it was the final work for my course in Voionmaa Institute. The film was selected for several film festivals including Tampere film festival.",
     "link": "https://vimeo.com/139064740",
     "type": "film"
+  },
+  {
+    "imageSrc": "druid.png",
+    "imageAlt": "Website preview, gray and red color scheme.",
+    "title": "Druid Website Renewal",
+    "description": "Project done as part of my studies in React and Drupal course. Website made for Druid Oy using Drupal as backend and React as frontend.",
+    "link": "https://github.com/ekundayoSO/druid-final-project-team1",
+    "type": "application"
+  },
+  {
+    "imageSrc": "tbuddy.png",
+    "imageAlt": "Website preview, island picture behind symbols.",
+    "title": "Travel Buddy",
+    "description": "This is a symfony web app for making travel plans for different locations. The app was originally done as a group project for Business College Helsinki's full stack course.",
+    "link": "https://github.com/hetti-r/TravelBuddy?tab=readme-ov-file",
+    "type": "application"
   }
 ]
