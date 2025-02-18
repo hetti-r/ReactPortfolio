@@ -1,37 +1,75 @@
-import React from 'react'
-import ProjectCard from '../components/ProjectCard'
+import React, { useState, useEffect } from 'react';
+import ProjectCard from '../components/ProjectCard';
+import projectsData from '../data/projects.json';
+
+// Import all images from projectPics directory using correct pattern
+const images = import.meta.glob('/src/assets/projectPics/*.{png,jpg,jpeg}', { eager: true });
 
 const Projects = () => {
+  const [filter, setFilter] = useState('all');
+  const [loadedImages, setLoadedImages] = useState({});
+
+  useEffect(() => {
+    const loadImages = async () => {
+      try {
+        // Debug: log available image paths
+        console.log('Available images:', images);
+
+        const imageMap = {};
+        for (const project of projectsData) {
+          const key = `/src/assets/projectPics/${project.imageSrc}`;
+          if (images[key]) {
+            imageMap[project.imageSrc] = images[key].default;
+          } else {
+            console.error(`Image not found: ${key}`);
+          }
+        }
+        setLoadedImages(imageMap);
+      } catch (error) {
+        console.error('Error loading images:', error);
+      }
+    };
+    loadImages();
+  }, []);
+
+  const handleFilterChange = (event) => {
+    setFilter(event.target.value);
+  };
+
+  const filteredProjects = filter === 'all'
+    ? projectsData
+    : projectsData.filter(project => project.type === filter);
+
   return (
     <>
-    <section id="projects">
-    <h2>Projects</h2>
-    <div className="boxcontainer">
-      <ProjectCard
-        imageSrc="https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/project1.png"
-        imageAlt="Pixel Clown game scene"
-        title="Farthabet"
-        description="Farthabet is a 2D reaction game where the player must enter given letters as quickly as possible to appease the school master of the Clown School. The game was made for the Global Game Jam 2024 where I worked as a 2D graphics artist in a team."
-        link="https://lennysmithgames.itch.io/clown-className-1-farthabet"
-      />
-      <ProjectCard
-        imageSrc="https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/Project2.png"
-        imageAlt="Snowy scenery with a yeti"
-        title="Yeti Ski"
-        description="Yeti Ski is a procedurally generated skiing game where the player jumps over obstacles as a yeti fleeing from the approaching avalanche. I worked as a 2D/concept artist and also did rigging and animating for this project in GamePro study program."
-        link="https://h3tt1.itch.io/yeti-ski"
-      />
-      <ProjectCard
-        imageSrc="https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/Project3.png"
-        imageAlt="Funny looking dodo birds"
-        title="Dodo Sapiens"
-        description="Dodo Sapiens was a final game project for my year of game studies in HEO academy. I worked as a game and level designer as well as an animator and 2D artist. Dodo Sapiens is a time limited game with a collect and drop - mechanics."
-        link="https://youtu.be/rYB4JmqTs7k"
-      />
-    </div>
-  </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <div>
+          <label>
+            Filter by type:
+            <select value={filter} onChange={handleFilterChange}>
+              <option value="all">All</option>
+              <option value="game">Game</option>
+              <option value="film">Film</option>
+              <option value="application">Application</option>
+            </select>
+          </label>
+        </div>
+        <div className="boxcontainer">
+          {filteredProjects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              imageSrc={loadedImages[project.imageSrc]}
+              imageAlt={project.imageAlt}
+              title={project.title}
+              description={project.description}
+              link={project.link}
+            />
+          ))}
+        </div>
+      </section>
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

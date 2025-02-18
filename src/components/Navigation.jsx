@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
@@ -12,11 +12,21 @@ const Navigation = () => {
     }
   };
 
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+    console.log(menuOpen)
+  };
+
   return (
     <div>
       <header>
         <div className="banner">
-          <div id="navbar">
+          <button className="mobile" onClick={toggleMenu}>
+            <span className="material-symbols-outlined">menu</span>
+          </button>
+          <div id="navbar" className={menuOpen ? 'open' : ''}>
             <h6>
               <a href="#aboutme">About Me</a>
               <a href="#skills">Skills</a>
@@ -24,11 +34,6 @@ const Navigation = () => {
               <a href="#bottom">Contact Me</a>
             </h6>
           </div>
-
-          <button className="mobile">
-            <span className="material-symbols-outlined">menu</span>
-          </button>
-
           <h1 id="name">Hetti Rönnemaa</h1>
           <nav>
             <ul>
@@ -38,7 +43,6 @@ const Navigation = () => {
               <li><h3><a href="#bottom">Contact Me</a></h3></li>
             </ul>
           </nav>
-
           <div className="banner-text">
             <p>{getBannerText()}</p>
           </div>
