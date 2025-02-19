@@ -46,8 +46,10 @@ body {
   
   /* selected link */
   a:active {
-    color: var(--light-link-color)
-  } 
+    color: var(--link-color)
+  }
+
+
 
 /* Titles */
 
@@ -178,8 +180,14 @@ ul li a {
   display: none;
 }
 
+nav a, #navbar a {
+  cursor: pointer;
+  color: var(--link-color);
+}
+
 #navbar.open {
   position: fixed;
+  margin-top: 2rem;
   left: 0;
   width: 100%;
   display: flex;
@@ -350,7 +358,7 @@ margin: 0;
   border-radius: 5px; /* älä koske */
   margin: 1vw;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   text-align: center;
   -webkit-box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
@@ -553,11 +561,12 @@ h6 {
 
 header {
 height: fit-content;
+margin-top: 0;
 
 }
 .banner {
   height:22rem;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 #name {
@@ -577,8 +586,11 @@ nav ul {
 
 .mobile {
   display: block;
-  margin-top: -2rem;
+  top: 0;
+  position: fixed;
+  margin-top: 0rem;
   height: 2rem;
+  width: 100%;
   background-color: #dde7f5;
   border-style: none;
   box-sizing: border-box;
@@ -588,6 +600,7 @@ nav ul {
   font-family: "Archivo Narrow", sans-serif;
   font-size: 16px;
   font-weight: 500;
+  z-index: 10000;
   text-align: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   transition: all .5s;
@@ -639,7 +652,13 @@ ul.responsive li {
 }
 
 .boxcontainer {
-  margin-top: -1rem;
+  margin-top: 1rem;
+}
+
+.box {
+  width: 80%;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 #aboutme {
@@ -676,7 +695,6 @@ ul.responsive li {
 }
 
 #skills h2 {
-
   padding-bottom: 1rem;
 }
 
@@ -694,15 +712,19 @@ ul.responsive li {
 
 .skillbox {
   width: 25vw;
-  height: 30vw;
+  height: auto;
   padding: 0;
   padding-top: 0;
   padding-bottom: 5vw;
   margin: 1vw;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-direction: column;
   text-align: center;
+}
+
+html body .container .skillbox p {
+  font-size: 6px;
 }
 
 .skillbox-img {

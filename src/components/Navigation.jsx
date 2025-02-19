@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const location = useLocation();
+  const navigate = useNavigate();
+
   const getBannerText = () => {
     switch (location.pathname) {
       case '/projects':
@@ -19,6 +21,20 @@ const Navigation = () => {
     console.log(menuOpen)
   };
 
+  const scrollToSection = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation to complete before scrolling
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) element.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div>
       <header>
@@ -28,19 +44,19 @@ const Navigation = () => {
           </button>
           <div id="navbar" className={menuOpen ? 'open' : ''}>
             <h6>
-              <a href="#aboutme">About Me</a>
-              <a href="#skills">Skills</a>
+              <a onClick={() => scrollToSection('aboutme')}>About Me</a>
+              <a onClick={() => scrollToSection('skills')}>Skills</a>
               <Link to="/projects">Projects</Link>
-              <a href="#bottom">Contact Me</a>
+              <a onClick={() => scrollToSection('bottom')}>Contact Me</a>
             </h6>
           </div>
           <h1 id="name">Hetti Rönnemaa</h1>
           <nav>
             <ul>
-              <li><h3><a href="#aboutme">About Me</a></h3></li>
-              <li><h3><a href="#skills">Skills</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('aboutme')}>About Me</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('skills')}>Skills</a></h3></li>
               <li><h3><Link to="/projects">Projects</Link></h3></li>
-              <li><h3><a href="#bottom">Contact Me</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('bottom')}>Contact Me</a></h3></li>
             </ul>
           </nav>
           <div className="banner-text">
