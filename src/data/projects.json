@@ -46,5 +46,37 @@
     "description": "This is a symfony web app for making travel plans for different locations. The app was originally done as a group project for Business College Helsinki's full stack course.",
     "link": "https://github.com/hetti-r/TravelBuddy?tab=readme-ov-file",
     "type": "application"
+  },
+  {
+    "imageSrc": "countries.png",
+    "imageAlt": "Website preview, globe icon, blue background.",
+    "title": "React + Redux Countries",
+    "description": "A full-stack app for searching countries and showing basic country and weather info fetched from APIs. Has loggin and registation form and functionality to add personal favourite countries.",
+    "link": "https://github.com/hetti-r/Redux-Countries",
+    "type": "application"
+  },
+  {
+    "imageSrc": "zoo.png",
+    "imageAlt": "Website preview, green leafy banner, animal photos in cards.",
+    "title": "React Zoo",
+    "description": "This is a simple app for displaying categories of animals and having options to like, dislike and delete them. Every animal has an additional single page with a bigger image and a little snippet of information coming from the Wikipedia. The project was done as an exercise for a React course. It uses React and Vite as it's base and an Javascript object and Wikpedia REST API as the data. ",
+    "link": "https://github.com/hetti-r/React-Zoo-App",
+    "type": "application"
+  },
+  {
+    "imageSrc": "drutheme.png",
+    "imageAlt": "Website preview, vector dodo and abstract pattern.",
+    "title": "Drupal Theme",
+    "description": "A custom theme for Drupal made as a part of my studies in Drupal course. The theme was made for a fictional company called Dodo News.",
+    "link": "https://github.com/hetti-r/Drupal-Icecream-Theme?tab=readme-ov-file",
+    "type": "application"
+  },
+  {
+    "imageSrc": "pfolio.png",
+    "imageAlt": "Website preview, pixel coffee cup and text.",
+    "title": "Drupal Portfolio",
+    "description": "This is a progressively decoupled full-stack web application that uses Drupal for the backend and React for the frontend. React theme works as the front end view fetching data via JSON:API module and Drupal works behind the scenes as the CMS.",
+    "link": "https://github.com/hetti-r/Drupal-Portfolio",
+    "type": "application"
   }
 ]
