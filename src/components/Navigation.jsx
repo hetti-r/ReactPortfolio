@@ -18,10 +18,10 @@ const Navigation = () => {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    console.log(menuOpen)
   };
 
   const scrollToSection = (sectionId) => {
+    setMenuOpen(false); // Close the menu after clicking a link
     if (location.pathname !== '/') {
       navigate('/');
       // Wait for navigation to complete before scrolling
@@ -35,27 +35,35 @@ const Navigation = () => {
     }
   };
 
+  const handleProjectsClick = () => {
+    setMenuOpen(false);
+    navigate('/projects');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div>
       <header>
-        <div className="banner">
-          <button className="mobile" onClick={toggleMenu}>
+        <div className="mobile-menu">
+        <button className="mobile" onClick={toggleMenu}>
             <span className="material-symbols-outlined">menu</span>
           </button>
           <div id="navbar" className={menuOpen ? 'open' : ''}>
             <h6>
               <a onClick={() => scrollToSection('aboutme')}>About Me</a>
               <a onClick={() => scrollToSection('skills')}>Skills</a>
-              <Link to="/projects">Projects</Link>
+              <Link to="/projects" onClick={handleProjectsClick}>Projects</Link>
               <a onClick={() => scrollToSection('bottom')}>Contact Me</a>
             </h6>
           </div>
+        </div>
+        <div className="banner">
           <h1 id="name">Hetti Rönnemaa</h1>
           <nav>
             <ul>
               <li><h3><a onClick={() => scrollToSection('aboutme')}>About Me</a></h3></li>
               <li><h3><a onClick={() => scrollToSection('skills')}>Skills</a></h3></li>
-              <li><h3><Link to="/projects">Projects</Link></h3></li>
+              <li><h3><Link to="/projects" onClick={handleProjectsClick}>Projects</Link></h3></li>
               <li><h3><a onClick={() => scrollToSection('bottom')}>Contact Me</a></h3></li>
             </ul>
           </nav>

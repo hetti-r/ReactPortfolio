@@ -97,12 +97,13 @@ font-size: 25px;
 /* Header Area */
 
 .banner {
-  background-image: url("https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/5tausta.png");
-  height:52rem;
+  background-image: url("/src/assets/22sssiso2tausta.png");
+  height:100vh;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
   display: flex;
   flex-direction: column;
 }
@@ -120,7 +121,7 @@ header {
 }
 
 #name {
-  margin-top: 13rem;
+  margin-top: 18rem;
 }
 
 nav ul {
@@ -389,7 +390,7 @@ margin: 0;
     border-radius: 5px;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 
   }
   .form-wrap h4,
@@ -439,22 +440,11 @@ footer {
     background-size: 100%;
     background-position: bottom;
 }
-.footer {
-  background: #333;
-  color: white;
-  padding: 2rem 0;
-  width: 100%;
-  position: relative;
-  bottom: 0;
-}
 
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
 
 .social-links {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -570,12 +560,12 @@ margin-top: 0;
 }
 .banner {
   height:22rem;
-  margin-top: 0rem;
+  margin-top: 2rem;
 }
 
 #name {
   font-size: 22px;
-  margin-top: 7.3rem;
+  margin-top: 5.3rem;
 }
 .banner-text {
   font-size: 1.65rem;
@@ -762,6 +752,8 @@ padding-top: 0;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding: 0rem;
+  margin-bottom: 0rem;
 }
 
 }
