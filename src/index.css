@@ -157,17 +157,17 @@ ul li a {
 
 @keyframes rotate-text-up { 
   0% {
-    transform: translate3d(0, 100px, 0);
+    transfooter: translate3d(0, 100px, 0);
     opacity: 0;
   }
   
   20%, 80% {
-    transform: translate3d(0, 0, 0);
+    transfooter: translate3d(0, 0, 0);
     opacity: 1;
   }
   
   100% {
-    transform: translate3d(0, 0, 0);
+    transfooter: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -294,7 +294,7 @@ margin: 0;
 
 /* About me */
 
-.aboutme {
+.aboutmeContainer {
   display: flex;
   background: var(--primary-color);
   -webkit-box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
@@ -303,24 +303,21 @@ margin: 0;
 }
 
 #aboutme {
-  margin-left: 15vw;
-  margin-right: 15vw;
-  margin-top: 2rem;
+  width: 40%;
+  margin: 4rem;
+  margin-left: 20vw;
+  margin-right: 0;
+  font-size: 18px;
 }
 
-.aboutme p {
-  margin-right: 20vw;
-}
-
-.pic1 {
-  vertical-align:top;
+.picAbout {
   border-radius: 10px;
   max-width: 16vw;
   max-height: 16vw;
   object-fit: cover;
   margin-left: 3vw;
-  margin-top: 5vw;
-  float: right;
+  margin-right: 15vw;
+  margin-top: 6vw;
 }
 
 
@@ -377,15 +374,15 @@ margin: 0;
   margin-top: -0.3rem;
 }
 
-/* Form and Footer */
+/* Footer */
 
-#formcontainer {
+#footercontainer {
     margin: 50px auto;
-    margin-top: -2.5rem;
+    margin-top: 1rem;
     width: 400px;
   }
   
-  .form-wrap {
+  .footer-wrap {
     padding: 5rem;
     border-radius: 5px;
     text-align: center;
@@ -393,13 +390,13 @@ margin: 0;
     margin-bottom: 3rem;
 
   }
-  .form-wrap h4,
-  .form-wrap p {
+  .footer-wrap h4,
+  .footer-wrap p {
     margin-bottom: 20px;
     color: var(--link-color);
   }
   
-  .form-group {
+  .footer-group {
     margin: 20px 0;
   }
   
@@ -559,13 +556,13 @@ margin-top: 0;
 
 }
 .banner {
-  height:22rem;
+  height:20rem;
   margin-top: 2rem;
 }
 
 #name {
   font-size: 22px;
-  margin-top: 5.3rem;
+  margin-top: 5rem;
 }
 .banner-text {
   font-size: 1.65rem;
@@ -642,11 +639,11 @@ ul.responsive li {
 }
 
 #projects h2 {
-  padding-bottom: 1rem;
+  padding-bottom: 0;
 }
 
 .boxcontainer {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 .box {
@@ -654,38 +651,50 @@ ul.responsive li {
   padding: 2rem;
   margin: 1rem;
 }
+.aboutmeContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+}
 
 #aboutme {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  margin-top: 2rem;
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0;
+  margin-bottom: 2rem;
   text-align: center;
+  width: 100vw;
+  font-size: 16px;
 
 }
 
-.aboutme p {
+.aboutmeContainer p {
   margin-right: 0vw;
   margin-bottom: 4vw;
-  text-align: left;
+  margin-top: 0;
 
 }
 
-.pic1 {
+.picAbout {
   border-radius: 10px;
   max-width: 36vw;
   max-height: 36vw;
   object-fit: cover;
-  margin:0;
-  float: none;
-  margin-bottom: 2vw;
+  margin-bottom: 0;
+  margin-top: 15vw;
+  margin-right: 0;
+  margin-left: 0;
+
 }
 
 #skills {
   padding: 0;
   padding-bottom: 12vw;
+  padding-top: 12vw;
 }
 
 #skills h2 {
@@ -736,16 +745,16 @@ margin-top: 0;
 padding-top: 0;
 }
 
-#formcontainer {
+#footercontainer {
   width: 100vw;
   padding: 2rem;
   margin-bottom: 1rem;
 }
 
-.form-wrap {
+.footer-wrap {
   margin: 0;
   padding: 0;
-  margin-top: 4rem;
+  margin-top: 0;
 }
 
 .social-links {

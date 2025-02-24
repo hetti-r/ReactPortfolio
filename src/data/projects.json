@@ -1,37 +1,5 @@
 [
   {
-    "imageSrc": "fart.png",
-    "imageAlt": "Pixel Clown game scene",
-    "title": "Farthabet",
-    "description": "Farthabet is a 2D reaction game where the player must enter given letters as quickly as possible to appease the school master of the Clown School. The game was made for the Global Game Jam 2024 where I worked as a 2D graphics artist in a team.",
-    "link": "https://lennysmithgames.itch.io/clown-class-1-farthabet",
-    "type": "game"
-  },
-  {
-    "imageSrc": "yeti.png",
-    "imageAlt": "Snowy scenery with a yeti",
-    "title": "Yeti Ski",
-    "description": "Yeti Ski is a procedurally generated skiing game where the player jumps over obstacles as a yeti fleeing from the approaching avalanche. I worked as a 2D/concept artist and also did rigging and animating for this project in GamePro study program.",
-    "link": "https://h3tt1.itch.io/yeti-ski",
-    "type": "game"
-  },
-  {
-    "imageSrc": "dodo.png",
-    "imageAlt": "Funny looking dodo birds",
-    "title": "Dodo Sapiens",
-    "description": "Dodo Sapiens was a final game project for my year of game studies in HEO academy. I worked as a game and level designer as well as an animator and 2D artist. Dodo Sapiens is a time limited game with a collect and drop - mechanics.",
-    "link": "https://youtu.be/rYB4JmqTs7k",
-    "type": "game"
-  },
-  {
-    "imageSrc": "gas.jpg",
-    "imageAlt": "Drawn animation of girl laying on a bed, black and white",
-    "title": "Gaslighting",
-    "description": "Gaslighting is an animated short film about a journey to recovery taking place in different parts of the mind. I worked as a writer, director, producer, and animator. It was the final work for my course in Voionmaa Institute. The film was selected for several film festivals, including Tampere Film Festival.",
-    "link": "https://vimeo.com/139064740",
-    "type": "film"
-  },
-  {
     "imageSrc": "druid.png",
     "imageAlt": "Website preview, gray and red color scheme.",
     "title": "Druid Website Renewal",
@@ -78,5 +46,77 @@
     "description": "This is a progressively decoupled full-stack web application that uses Drupal for the backend and React for the frontend. React theme works as the front end view fetching data via JSON:API module and Drupal works behind the scenes as the CMS.",
     "link": "https://github.com/hetti-r/Drupal-Portfolio",
     "type": "application"
+  },
+  {
+    "imageSrc": "fart.png",
+    "imageAlt": "Pixel Clown game scene",
+    "title": "Clown School Class 1: Farthabet",
+    "description": "Farthabet is a 2D reaction game where the player must enter given letters as quickly as possible to appease the school master of the Clown School. The game was made for the Global Game Jam 2024 where I worked as a 2D graphics artist in a team.",
+    "link": "https://lennysmithgames.itch.io/clown-class-1-farthabet",
+    "type": "game"
+  },
+  {
+    "imageSrc": "pikkuli.jpg",
+    "imageAlt": "Cartoon orange bird feeds a toy bird.",
+    "title": "Pikkuli",
+    "description": "Pikkuli is a children's animated series about a little bird named Pikkuli and his family. I worked as assistant screenwriter for the series. Pikkuli has been broadcasted in over 40 countries.",
+    "link": "https://areena.yle.fi/1-3832826",
+    "type": "film"
+  },
+  {
+    "imageSrc": "yeti.png",
+    "imageAlt": "Snowy scenery with a yeti",
+    "title": "Yeti Ski",
+    "description": "Yeti Ski is a procedurally generated skiing game where the player jumps over obstacles as a yeti fleeing from the approaching avalanche. I worked as a 2D/concept artist and also did rigging and animating for this project in GamePro study program.",
+    "link": "https://h3tt1.itch.io/yeti-ski",
+    "type": "game"
+  },
+  {
+    "imageSrc": "dodo.png",
+    "imageAlt": "Funny looking dodo birds",
+    "title": "Dodo Sapiens",
+    "description": "Dodo Sapiens was a final game project for my year of game studies in HEO academy. I worked as a game and level designer as well as an animator and 2D artist. Dodo Sapiens is a time limited game with a collect and drop - mechanics.",
+    "link": "https://youtu.be/rYB4JmqTs7k",
+    "type": "game"
+  },
+  {
+    "imageSrc": "grandpa.png",
+    "imageAlt": "Red sick rat drawing with title.",
+    "title": "Grandfather's ghost gave me quite the spook",
+    "description": "My first time of participating in the Global Game Jam. In this game you play as a young woman who gets a task from her granpa’s ghost to take care of his garden. Player needs to protect the garden from attacking rats. My role was an animator and a 2D artist.",
+    "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
+    "type": "game"
+  },
+  {
+    "imageSrc": "crypt.png",
+    "imageAlt": "Loading screen with footprints and forest silhuette with eyes.",
+    "title": "Cryptid Watch",
+    "description": "Game art and design for a game project in Game Desing study program at HEO. Cryptid Watch is a game where the player is a cryptid photographer in a forest. The player needs to take pictures of cryptids and avoid getting caught by the forest ranger. I worked as the art lead and a game designer.",
+    "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
+    "type": "game"
+  },
+  {
+    "imageSrc": "tapio.png",
+    "imageAlt": "Drawn title on forest background.",
+    "title": "Who Walks In The Forest Tapio?",
+    "description": "Who Walks in the forest, Tapio? is an animated short film for children where a young immigrant girl, Fatima gets lost in the forest and befriends an elk calf and a forest spirit. The story is set in the present day and it has themes of finding your own identity, xenophobia and living in a foreign country.",
+    "link": "https://www.youtube.com/watch?v=7WBa82oASkI",
+    "type": "film"
+  },
+  {
+    "imageSrc": "gas.jpg",
+    "imageAlt": "Drawn animation of girl laying on a bed, black and white",
+    "title": "Gaslighting",
+    "description": "Gaslighting is an animated short film about a journey to recovery taking place in different parts of the mind. I worked as a writer, director, producer, and animator. It was the final work for my course in Voionmaa Institute. The film was selected for several film festivals, including Tampere Film Festival.",
+    "link": "https://vimeo.com/139064740",
+    "type": "film"
+  },
+  {
+    "imageSrc": "kuuhun.png",
+    "imageAlt": "Film preview, ppainted smiling moon.",
+    "title": "Raketilla Kuuhun",
+    "description": "Music video for the song Raketilla Kuuhun by the Finnish band Auringon Lapset. I worked as an art director with a small team. The video was made as a part of my studies in Voionmaa Institute.",
+    "link": "https://www.youtube.com/watch?v=09SoMU-qrgU",
+    "type": "film"
   }
 ]
