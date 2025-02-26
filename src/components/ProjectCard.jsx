@@ -1,14 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ imageSrc, imageAlt, title, description, link }) => {
+const ProjectCard = ({ id, imageSrc, imageAlt, title, description }) => {
   return (
     <div className="box">
-      <img className="projectimg" src={imageSrc} alt={imageAlt} />
+      <Link to={`/project/${id}`} className="project-link">
+        <img className="projectimg" src={imageSrc} alt={imageAlt} />
+      </Link>
       <h4>{title}</h4>
       <p>{description}</p>
-      <p><a href={link}>See more</a></p>
+      <p>
+        <Link to={`/project/${id}`} className="project-link">See more</Link>
+      </p>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

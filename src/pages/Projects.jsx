@@ -12,9 +12,6 @@ const Projects = () => {
   useEffect(() => {
     const loadImages = async () => {
       try {
-        // Debug: log available image paths
-        console.log('Available images:', images);
-
         const imageMap = {};
         for (const project of projectsData) {
           const key = `/src/assets/projectPics/${project.imageSrc}`;
@@ -42,6 +39,7 @@ const Projects = () => {
 
   return (
     <>
+    <main>
       <section id="projects">
         <div className="filter-tags">
           <button
@@ -70,9 +68,10 @@ const Projects = () => {
           </button>
         </div>
         <div className="boxcontainer">
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <ProjectCard
-              key={index}
+              key={project.id}
+              id={project.id}
               imageSrc={loadedImages[project.imageSrc]}
               imageAlt={project.imageAlt}
               title={project.title}
@@ -82,6 +81,7 @@ const Projects = () => {
           ))}
         </div>
       </section>
+    </main>
     </>
   );
 };

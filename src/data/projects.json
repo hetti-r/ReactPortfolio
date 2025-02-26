@@ -1,5 +1,6 @@
 [
   {
+    "id": "15",
     "imageSrc": "druid.png",
     "imageAlt": "Website preview, gray and red color scheme.",
     "title": "Druid Website Renewal",
@@ -8,6 +9,7 @@
     "type": "application"
   },
   {
+    "id": "14",
     "imageSrc": "tbuddy.png",
     "imageAlt": "Website preview, island picture behind symbols.",
     "title": "Travel Buddy",
@@ -16,22 +18,25 @@
     "type": "application"
   },
   {
+    "id": "13",
     "imageSrc": "countries.png",
     "imageAlt": "Website preview, globe icon, blue background.",
     "title": "React + Redux Countries",
-    "description": "A full-stack app for searching countries and showing basic country and weather info fetched from APIs. Has loggin and registation form and functionality to add personal favourite countries.",
+    "description": "A full-stack app for searching countries and showing basic country and weather info fetched from APIs. Has login and registration form and functionality to add personal favourite countries.",
     "link": "https://github.com/hetti-r/Redux-Countries",
     "type": "application"
   },
   {
+    "id": "12",
     "imageSrc": "zoo.png",
     "imageAlt": "Website preview, green leafy banner, animal photos in cards.",
     "title": "React Zoo",
-    "description": "This is a simple app for displaying categories of animals and having options to like, dislike and delete them. Every animal has an additional single page with a bigger image and a little snippet of information coming from the Wikipedia. The project was done as an exercise for a React course. It uses React and Vite as it's base and an Javascript object and Wikpedia REST API as the data. ",
+    "description": "This is a simple app for displaying categories of animals and having options to like, dislike and delete them. Every animal has an additional single page with a bigger image and a little snippet of information coming from the Wikipedia. The project was done as an exercise for a React course. It uses React and Vite as its base and a Javascript object and Wikipedia REST API as the data.",
     "link": "https://github.com/hetti-r/React-Zoo-App",
     "type": "application"
   },
   {
+    "id": "11",
     "imageSrc": "drutheme.png",
     "imageAlt": "Website preview, vector dodo and abstract pattern.",
     "title": "Drupal Theme",
@@ -40,6 +45,7 @@
     "type": "application"
   },
   {
+    "id": "10",
     "imageSrc": "pfolio.png",
     "imageAlt": "Website preview, pixel coffee cup and text.",
     "title": "Drupal Portfolio",
@@ -48,6 +54,7 @@
     "type": "application"
   },
   {
+    "id": "9",
     "imageSrc": "fart.png",
     "imageAlt": "Pixel Clown game scene",
     "title": "Clown School Class 1: Farthabet",
@@ -56,6 +63,7 @@
     "type": "game"
   },
   {
+    "id": "8",
     "imageSrc": "pikkuli.jpg",
     "imageAlt": "Cartoon orange bird feeds a toy bird.",
     "title": "Pikkuli",
@@ -64,6 +72,7 @@
     "type": "film"
   },
   {
+    "id": "7",
     "imageSrc": "yeti.png",
     "imageAlt": "Snowy scenery with a yeti",
     "title": "Yeti Ski",
@@ -72,6 +81,7 @@
     "type": "game"
   },
   {
+    "id": "6",
     "imageSrc": "dodo.png",
     "imageAlt": "Funny looking dodo birds",
     "title": "Dodo Sapiens",
@@ -80,22 +90,25 @@
     "type": "game"
   },
   {
+    "id": "5",
     "imageSrc": "grandpa.png",
     "imageAlt": "Red sick rat drawing with title.",
     "title": "Grandfather's ghost gave me quite the spook",
-    "description": "My first time of participating in the Global Game Jam. In this game you play as a young woman who gets a task from her granpa’s ghost to take care of his garden. Player needs to protect the garden from attacking rats. My role was an animator and a 2D artist.",
+    "description": "My first time of participating in the Global Game Jam. In this game you play as a young woman who gets a task from her grandpa’s ghost to take care of his garden. Player needs to protect the garden from attacking rats. My role was an animator and a 2D artist.",
     "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
     "type": "game"
   },
   {
+    "id": "4",
     "imageSrc": "crypt.png",
-    "imageAlt": "Loading screen with footprints and forest silhuette with eyes.",
+    "imageAlt": "Loading screen with footprints and forest silhouette with eyes.",
     "title": "Cryptid Watch",
-    "description": "Game art and design for a game project in Game Desing study program at HEO. Cryptid Watch is a game where the player is a cryptid photographer in a forest. The player needs to take pictures of cryptids and avoid getting caught by the forest ranger. I worked as the art lead and a game designer.",
+    "description": "Game art and design for a game project in Game Design study program at HEO. Cryptid Watch is a game where the player is a cryptid photographer in a forest. The player needs to take pictures of cryptids and avoid getting caught by the forest ranger. I worked as the art lead and a game designer.",
     "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
     "type": "game"
   },
   {
+    "id": "3",
     "imageSrc": "tapio.png",
     "imageAlt": "Drawn title on forest background.",
     "title": "Who Walks In The Forest Tapio?",
@@ -104,6 +117,7 @@
     "type": "film"
   },
   {
+    "id": "2",
     "imageSrc": "gas.jpg",
     "imageAlt": "Drawn animation of girl laying on a bed, black and white",
     "title": "Gaslighting",
@@ -112,8 +126,9 @@
     "type": "film"
   },
   {
+    "id": "1",
     "imageSrc": "kuuhun.png",
-    "imageAlt": "Film preview, ppainted smiling moon.",
+    "imageAlt": "Film preview, painted smiling moon.",
     "title": "Raketilla Kuuhun",
     "description": "Music video for the song Raketilla Kuuhun by the Finnish band Auringon Lapset. I worked as an art director with a small team. The video was made as a part of my studies in Voionmaa Institute.",
     "link": "https://www.youtube.com/watch?v=09SoMU-qrgU",
