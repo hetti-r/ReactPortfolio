@@ -121,7 +121,7 @@ header {
 }
 
 #name {
-  margin-top: 18rem;
+  margin-top: 24vh;
 }
 
 nav ul {
@@ -342,7 +342,7 @@ margin: 0;
 
 #aboutme {
   width: 40%;
-  margin: 4rem;
+  margin: 5vw;
   margin-left: 20vw;
   margin-right: 0;
   font-size: 18px;
@@ -355,7 +355,7 @@ margin: 0;
   object-fit: cover;
   margin-left: 3vw;
   margin-right: 15vw;
-  margin-top: 6vw;
+  margin-top: 12vw;
 }
 
 
@@ -421,7 +421,7 @@ margin: 0;
   }
   
   .footer-wrap {
-    padding: 5rem;
+    padding: 5vh;
     border-radius: 5px;
     text-align: center;
     margin-top: 2rem;
