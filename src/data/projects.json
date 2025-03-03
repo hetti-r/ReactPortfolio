@@ -17,6 +17,7 @@
     "title": "Travel Buddy",
     "description": "This is a symfony web app for making travel plans for different locations. The app was originally done as a group project for Business College Helsinki's full stack course.",
     "link": "https://github.com/hetti-r/TravelBuddy?tab=readme-ov-file",
+    "figma": "https://embed.figma.com/design/ftj2kg6ckCIBdME6Z54alC/Prototype?node-id=0-1&embed-host=share",
     "type": "application"
   },
   {
@@ -88,7 +89,8 @@
     "imageAlt": "Funny looking dodo birds",
     "title": "Dodo Sapiens",
     "description": "Dodo Sapiens was a final game project for my year of game studies in HEO academy. I worked as a game and level designer as well as an animator and 2D artist. Dodo Sapiens is a time limited game with a collect and drop - mechanics.",
-    "link": "https://youtu.be/rYB4JmqTs7k",
+    "pdf": "dodo.pdf",
+    "video": "https://www.youtube.com/embed/rYB4JmqTs7k?si=eGmjV3VRYoK-fsqn",
     "type": "game"
   },
   {

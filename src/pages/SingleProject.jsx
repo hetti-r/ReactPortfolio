@@ -43,10 +43,30 @@ const SingleProject = () => {
                 />
               </div>
             )}
-            <a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a> {/* open in a new tab + security attributes */}
+            {project.pdf && (
+              <div className="pdf-embed-wrapper">
+                <iframe
+                  src={`/src/assets/pdfs/${project.pdf}#view=FitH`}
+                  width="100%"
+                  height="800px"
+                  style={{
+                    border: 'none',
+                    display: 'block'
+                  }}
+                  title="PDF document"
+                >
+                  <p>Your browser does not support iframes. <a href={`/src/assets/pdfs/${project.pdf}`}>Download PDF</a></p>
+                </iframe>
+              </div>
+            )}
+            <div>
+              <button className="backButton" onClick={() => window.history.back()}>GO BACK</button>
+              {project.link && (
+                <a className="moreButton" href={project.link} target="_blank" rel="noopener noreferrer">VIEW PROJECT</a> /* open in a new tab + security attributes */
+              )}
+            </div>
           </div>
         </div>
-        <button className="backButton" onClick={() => window.history.back()}>BACK</button>
       </section>
     </main>
   );
