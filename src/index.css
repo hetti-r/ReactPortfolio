@@ -143,7 +143,7 @@ ul li a {
 
 .banner-text {
     font-family: var(--pixel-font);
-    font-size: 65px;
+    font-size: 80px;
     color: var(--light-text-color);
     margin: 0.3rem auto;
     opacity: 0;
@@ -157,17 +157,17 @@ ul li a {
 
 @keyframes rotate-text-up { 
   0% {
-    transfooter: translate3d(0, 100px, 0);
+    transform: translate3d(0, 100px, 0);
     opacity: 0;
   }
   
   20%, 80% {
-    transfooter: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
   
   100% {
-    transfooter: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -297,23 +297,29 @@ margin: 0;
   align-items: center;
   text-align: left;
   padding: 3rem;
-  width: 80%;
+  padding-bottom: 4rem;
+  width: 65%;
   color: var(--text-color);
   background-color: var(--primary-color);
   border-radius: 5px;
   margin: 1rem;
   -webkit-box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
   box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
+  /*transform: translateY(-36rem); */
   
 }
-
 .single-project a {
   margin: 2rem;
 }
-
 .single-project h2 {
   padding: 0;
-  margin: 1rem;
+  margin: 2rem 0 0.5rem;
+  margin-top: 2rem;
+}
+.single-project p {
+  padding: 0;
+  margin: 0 10rem 1rem;
+  font-size: 20px;
 }
 .project-title-img {
   max-width: 100%;
@@ -323,7 +329,21 @@ margin: 0;
   object-fit: contain;
   padding: 0;
 }
-
+.extra-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0 2rem;
+}
+.extra-project-image {
+  align-self: center;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  object-fit: contain;
+  padding: 0;
+  margin: 0 10rem 0rem;
+}
 .figma-embed-wrapper {
   position: 'relative';
   max-width: 100%;
@@ -333,12 +353,19 @@ margin: 0;
 }
 
 .video-embed-wrapper {
-  position: 'relative';
-  max-width: 100%;
+  display: inline-block;
   width: 100%;
-  height: 30rem;
+  max-width: 100%;
   margin: 1rem;
-  overflow: 'hidden';
+  overflow: hidden;
+  aspect-ratio: 16 / 9; /* Adjust this ratio based on your video's aspect ratio */
+}
+
+.video-embed-wrapper iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none; /* Ensure no border is applied */
 }
 
 .pdf-embed-wrapper {
@@ -359,8 +386,7 @@ margin: 0;
   padding: 10px;
   border-radius: 5px;
   border: none;
-  margin: 1rem;
-  margin-right: 0;
+  margin: 2rem 0 0 2rem;
   cursor: pointer;
   transition: background-color 0.3s;
   box-shadow: 0px 0px 10px 4px rgba(53, 42, 46, 0.164);
@@ -380,8 +406,7 @@ margin: 0;
   padding: 10px;
   border-radius: 5px;
   border: none;
-  margin: 1rem;
-  margin-left: 0;
+  margin: 0;
   cursor: pointer;
   transition: background-color 0.3s;
   box-shadow: 0px 0px 10px 4px rgba(53, 42, 46, 0.164);
@@ -477,7 +502,6 @@ margin: 0;
 
 #footercontainer {
     margin: 50px auto;
-    margin-top: 1rem;
     width: 400px;
   }
   
@@ -489,7 +513,11 @@ margin: 0;
     margin-bottom: 3rem;
 
   }
-  .footer-wrap h4,
+  .footer-wrap h4 {
+    margin-bottom: 20px;
+    color: var(--link-color);
+    font-size: 35px;
+  }
   .footer-wrap p {
     margin-bottom: 20px;
     color: var(--link-color);
@@ -506,7 +534,7 @@ footer {
     justify-content: center;
     padding-bottom: 55px;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 18px;
     text-align: center;
     background-color: var(--footer-color);
     background-image: url(https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/kukat.png);
@@ -518,7 +546,7 @@ footer {
 
 .social-links {
   padding: 0 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -537,7 +565,7 @@ footer {
   color: #64b5f6;
 }
 
-.social-link i {
+social-link i {
   font-size: 1.5rem;
 }
 

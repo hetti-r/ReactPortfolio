@@ -5,37 +5,62 @@
     "imageAlt": "Website preview, gray and red color scheme.",
     "title": "Druid Website Renewal",
     "description": "Project done as part of my studies in React and Drupal course. Website made for Druid Oy using Drupal as backend and React as frontend.",
+    "longDescription": "This project was done as a part of my studies in React and Drupal course at Business College Helsinki. The task was to renew a  company website in collaboration with Druid Oy to meet their specific requirements. We integrated Drupal as the backend and React.js as the frontend.\nThis project demonstrates an interaction between these technologies, where Drupal handles content management, and React provides a dynamic front-end interface using JSON. The communication between the two platforms is facilitated through JSON:API.\nThe website was made as a group project with four other students. My role in the project was to design the website and make a prototype in Figma, create the React frontend, and to make the website responsive. The project was done in two months.",
+    
     "link": "https://github.com/ekundayoSO/druid-final-project-team1",
     "video": "https://www.youtube.com/embed/gdJrWDPxBuc?si=71MdnBDiJYGurh2Z",
-    "figma": "https://embed.figma.com/design/R4IedmGQkstC5b3MOtkGZM/Druid-Final?node-id=0-1&embed-host=share",
+    "figma": "https://embed.figma.com/design/EtW5W0zftevxZgDfHUABrV/Druid-Renewal?embed-host=share",
     "type": "application"
   },
   {
     "id": "14",
-    "imageSrc": "tbuddy.png",
-    "imageAlt": "Website preview, island picture behind symbols.",
-    "title": "Travel Buddy",
-    "description": "This is a symfony web app for making travel plans for different locations. The app was originally done as a group project for Business College Helsinki's full stack course.",
-    "link": "https://github.com/hetti-r/TravelBuddy?tab=readme-ov-file",
-    "figma": "https://embed.figma.com/design/ftj2kg6ckCIBdME6Z54alC/Prototype?node-id=0-1&embed-host=share",
-    "type": "application"
-  },
-  {
-    "id": "13",
     "imageSrc": "countries.png",
     "imageAlt": "Website preview, globe icon, blue background.",
+    "extraImages": [
+      {
+        "src": "https://github.com/hetti-r/Redux-Countries/raw/main/preview2.png",
+        "alt": "Website preview, cards with countries."
+      }
+    ],
     "title": "React + Redux Countries",
     "description": "A full-stack app for searching countries and showing basic country and weather info fetched from APIs. Has login and registration form and functionality to add personal favourite countries.",
+    "longDescription": "This application offers a comprehensive country exploration experience with the following features:\nUser Management: Secure authentication system that stores login information and personal country favorites in a database.\nCountries Explorer: Browse through countries with detailed information and use the search functionality to filter results.\nFavorites System: Add countries to your personal favorites list for quick access, and easily manage your selections. Detailed Country Views: Access expanded information about each country including full flag display and real-time weather data.\nModern Tech Stack: Built with JavaScript, React/Vite frontend, Firebase backend, Redux for state management, Bootstrap and React Icons for styling, and integration with Rest Countries API, Firebase Firestore, and Open Weather API.",
     "link": "https://github.com/hetti-r/Redux-Countries",
     "type": "application"
   },
   {
-    "id": "12",
+    "id": "13",
     "imageSrc": "zoo.png",
     "imageAlt": "Website preview, green leafy banner, animal photos in cards.",
     "title": "React Zoo",
     "description": "This is a simple app for displaying categories of animals and having options to like, dislike and delete them. Every animal has an additional single page with a bigger image and a little snippet of information coming from the Wikipedia. The project was done as an exercise for a React course. It uses React and Vite as its base and a Javascript object and Wikipedia REST API as the data.",
+    "longDescription": "This is a web app for displaying categories of animals and having options to like, dislike and delete them. Every animal has an additional single page with a bigger image and a little snippet of information coming from the Wikipedia. All the animal pictures come from Unsplash and are randomized when the page is refreshed. The header image changes by the category and uses a random image with unique search words such as forest and sky.\nThe project was done as an exercise for a React course. It uses React and Vite as it's base and an Javascript object and Wikpedia REST API as the data. The React course and the code base was given by Margit Tennosaar at Business College Helsinki.",
     "link": "https://github.com/hetti-r/React-Zoo-App",
+    "type": "application"
+  },
+  {
+    "id": "12",
+    "imageSrc": "tbuddy.png",
+    "imageAlt": "Website preview, island picture behind symbols.",
+    "extraImages": [
+      {
+        "src": "https://github.com/hetti-r/TravelBuddy/raw/main/preview2.png",
+        "alt": "Website preview, travel plans."
+      },
+      {
+        "src": "https://github.com/hetti-r/TravelBuddy/raw/main/preview3.png",
+        "alt": "Website preview, create travel plan."
+      },
+      {
+        "src": "https://github.com/hetti-r/TravelBuddy/raw/main/preview4.png",
+        "alt": "Website preview, view travel plan."
+      }
+    ],
+    "title": "Travel Buddy",
+    "description": "This is a symfony web app for making travel plans for different locations. The app was originally done as a group project for Business College Helsinki's full stack course.",
+    "longDescription": "This is a Symfony web app for making travel plans for different locations. The app was originally done as a group project for Business College Helsinki's full-stack course. The app uses symfony CRUD and postgresql to make a database of the travel plans. You can use a form to add plans to the database and also display, edit and delete plans. The app uses pictures from Unsplash and icons from icons8. \n I was responsible for making a wireframe prototype in Figma, designing the CRUD and database, and making the front end with Twig.",
+    "link": "https://github.com/hetti-r/TravelBuddy?tab=readme-ov-file",
+    "figma": "https://embed.figma.com/design/ftj2kg6ckCIBdME6Z54alC/Prototype?node-id=0-1&embed-host=share",
     "type": "application"
   },
   {
@@ -44,6 +69,7 @@
     "imageAlt": "Website preview, vector dodo and abstract pattern.",
     "title": "Drupal Theme",
     "description": "A custom theme for Drupal made as a part of my studies in Drupal course. The theme was made for a fictional company called Dodo News.",
+    "longDescription": "",
     "link": "https://github.com/hetti-r/Drupal-Icecream-Theme?tab=readme-ov-file",
     "type": "application"
   },
@@ -53,6 +79,7 @@
     "imageAlt": "Website preview, pixel coffee cup and text.",
     "title": "Drupal Portfolio",
     "description": "This is a progressively decoupled full-stack web application that uses Drupal for the backend and React for the frontend. React theme works as the front end view fetching data via JSON:API module and Drupal works behind the scenes as the CMS.",
+    "longDescription": "",
     "link": "https://github.com/hetti-r/Drupal-Portfolio",
     "type": "application"
   },
@@ -62,6 +89,7 @@
     "imageAlt": "Pixel Clown game scene",
     "title": "Clown School Class 1: Farthabet",
     "description": "Farthabet is a 2D reaction game where the player must enter given letters as quickly as possible to appease the school master of the Clown School. The game was made for the Global Game Jam 2024 where I worked as a 2D graphics artist in a team.",
+    "longDescription": "",
     "link": "https://lennysmithgames.itch.io/clown-class-1-farthabet",
     "type": "game"
   },
@@ -71,6 +99,7 @@
     "imageAlt": "Cartoon orange bird feeds a toy bird.",
     "title": "Pikkuli",
     "description": "Pikkuli is a children's animated series about a little bird named Pikkuli and his family. I worked as assistant screenwriter for the series. Pikkuli has been broadcasted in over 40 countries.",
+    "longDescription": "",
     "link": "https://areena.yle.fi/1-3832826",
     "type": "film"
   },
@@ -80,6 +109,7 @@
     "imageAlt": "Snowy scenery with a yeti",
     "title": "Yeti Ski",
     "description": "Yeti Ski is a procedurally generated skiing game where the player jumps over obstacles as a yeti fleeing from the approaching avalanche. I worked as a 2D/concept artist and also did rigging and animating for this project in GamePro study program.",
+    "longDescription": "",
     "link": "https://h3tt1.itch.io/yeti-ski",
     "type": "game"
   },
@@ -89,6 +119,7 @@
     "imageAlt": "Funny looking dodo birds",
     "title": "Dodo Sapiens",
     "description": "Dodo Sapiens was a final game project for my year of game studies in HEO academy. I worked as a game and level designer as well as an animator and 2D artist. Dodo Sapiens is a time limited game with a collect and drop - mechanics.",
+    "longDescription": "",
     "pdf": "dodo.pdf",
     "video": "https://www.youtube.com/embed/rYB4JmqTs7k?si=eGmjV3VRYoK-fsqn",
     "type": "game"
@@ -98,7 +129,8 @@
     "imageSrc": "grandpa.png",
     "imageAlt": "Red sick rat drawing with title.",
     "title": "Grandfather's ghost gave me quite the spook",
-    "description": "My first time of participating in the Global Game Jam. In this game you play as a young woman who gets a task from her grandpa’s ghost to take care of his garden. Player needs to protect the garden from attacking rats. My role was an animator and a 2D artist.",
+    "description": "My first time of participating in the Global Game Jam. In this game you play as a young woman who gets a task from her grandpa's ghost to take care of his garden. Player needs to protect the garden from attacking rats. My role was an animator and a 2D artist.",
+    "longDescription": "",
     "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
     "type": "game"
   },
@@ -108,6 +140,7 @@
     "imageAlt": "Loading screen with footprints and forest silhouette with eyes.",
     "title": "Cryptid Watch",
     "description": "Game art and design for a game project in Game Design study program at HEO. Cryptid Watch is a game where the player is a cryptid photographer in a forest. The player needs to take pictures of cryptids and avoid getting caught by the forest ranger. I worked as the art lead and a game designer.",
+    "longDescription": "",
     "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
     "type": "game"
   },
@@ -117,6 +150,7 @@
     "imageAlt": "Drawn title on forest background.",
     "title": "Who Walks In The Forest Tapio?",
     "description": "Who Walks in the forest, Tapio? is an animated short film for children where a young immigrant girl, Fatima gets lost in the forest and befriends an elk calf and a forest spirit. The story is set in the present day and it has themes of finding your own identity, xenophobia and living in a foreign country.",
+    "longDescription": "",
     "link": "https://www.youtube.com/watch?v=7WBa82oASkI",
     "type": "film"
   },
@@ -126,6 +160,7 @@
     "imageAlt": "Drawn animation of girl laying on a bed, black and white",
     "title": "Gaslighting",
     "description": "Gaslighting is an animated short film about a journey to recovery taking place in different parts of the mind. I worked as a writer, director, producer, and animator. It was the final work for my course in Voionmaa Institute. The film was selected for several film festivals, including Tampere Film Festival.",
+    "longDescription": "",
     "link": "https://vimeo.com/139064740",
     "video": "https://player.vimeo.com/video/139064740?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     "type": "film"
@@ -136,6 +171,7 @@
     "imageAlt": "Film preview, painted smiling moon.",
     "title": "Raketilla Kuuhun",
     "description": "Music video for the song Raketilla Kuuhun by the Finnish band Auringon Lapset. I worked as an art director with a small team. The video was made as a part of my studies in Voionmaa Institute.",
+    "longDescription": "",
     "link": "https://www.youtube.com/watch?v=09SoMU-qrgU",
     "type": "film"
   }

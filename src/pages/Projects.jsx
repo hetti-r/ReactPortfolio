@@ -49,6 +49,12 @@ const Projects = () => {
             All
           </button>
           <button
+            className={`filter-tag ${filter === 'application' ? 'active' : ''}`}
+            onClick={() => setFilter('application')}
+          >
+            Apps
+          </button>
+          <button
             className={`filter-tag ${filter === 'game' ? 'active' : ''}`}
             onClick={() => setFilter('game')}
           >
@@ -59,12 +65,6 @@ const Projects = () => {
             onClick={() => setFilter('film')}
           >
             Films
-          </button>
-          <button
-            className={`filter-tag ${filter === 'application' ? 'active' : ''}`}
-            onClick={() => setFilter('application')}
-          >
-            Apps
           </button>
         </div>
         <div className="boxcontainer">

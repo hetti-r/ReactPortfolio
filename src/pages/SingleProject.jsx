@@ -10,22 +10,42 @@ const SingleProject = () => {
     return <div>Project not found</div>;
   }
 
+  const longDescriptionLines = project.longDescription.split('\n'); // split the long description into an array of lines divided by newlines
+
   return (
     <main>
       <section id="projects">
         <div className="boxcontainer">
           <div className='single-project'>
-            <img className='project-title-img' src={`/src/assets/projectPics/${project.imageSrc}`} alt={project.imageAlt} />
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
 
+            <img className='project-title-img' src={`/src/assets/projectPics/${project.imageSrc}`} alt={project.imageAlt} />
+
+            <h2>{project.title}</h2>
+
+            {longDescriptionLines.map((line, index) => (
+              <p key={index}>{line}</p>
+            ))}
+
+            {project.extraImages && (
+                <>
+                  {project.extraImages.map((image, index) => (
+                    <div key={index} className="extra-image-wrapper">
+                      <img 
+                        src={image.src} 
+                        alt={image.alt} 
+                        className="extra-project-image" 
+                      />
+                    </div>
+                  ))}
+                </>
+            )}
 
             {project.figma && (
               <div className="figma-embed-wrapper">
                 <iframe
                   style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
                   width="100%"
-                  height="450"
+                  height="720"
                   src={project.figma}
                   allowFullScreen
                 />
