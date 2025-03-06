@@ -70,7 +70,7 @@ h2 {
 }
 
 h3 {
-  margin-bottom: 35px;
+  margin-bottom: 2vh;
   font-family: var(--pixel-font);
   font-size: 30px;
   text-align: center;
@@ -121,29 +121,30 @@ header {
 }
 
 #name {
-  margin-top: 24vh;
+  margin-top: 28vh;
 }
 
 nav ul {
     list-style: none;
     text-align: center;
+    margin-bottom: 0%;
 }
 
 header li {
     display: inline-block;
-    flex-wrap: nowrap;
-    
+    flex-wrap: nowrap;  
 }
 
 ul li a {
-    margin: 20px;
+    margin: 0 20px 0;
     text-decoration: none;
     display: block;
+    margin-bottom: 0;
 }
 
 .banner-text {
     font-family: var(--pixel-font);
-    font-size: 80px;
+    font-size: 9vh;
     color: var(--light-text-color);
     margin: 0.3rem auto;
     opacity: 0;
@@ -246,6 +247,9 @@ background: linear-gradient(180deg, rgba(108,133,156,1) 0%, rgba(239,231,230,0) 
 margin: 0;
 }
 
+.projectsTitle {
+  color: var(--light-text-color);
+}
 .boxcontainer {
   display: flex;
   justify-content:center;
@@ -318,8 +322,8 @@ margin: 0;
 }
 .single-project p {
   padding: 0;
-  margin: 0 10rem 1rem;
-  font-size: 20px;
+  margin: 0 6vw 1rem;
+  font-size: 1.2vw;
 }
 .project-title-img {
   max-width: 100%;
@@ -342,7 +346,7 @@ margin: 0;
   border-radius: 5px;
   object-fit: contain;
   padding: 0;
-  margin: 0 10rem 0rem;
+  margin: 0 6vw 0;
 }
 .figma-embed-wrapper {
   position: 'relative';
@@ -579,11 +583,8 @@ small {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  width: fit-content;
-  height: fit-content;
-  padding: 0.9vw;
-  padding-left: 1.1vw;
-  padding-right: 1.1vw;
+  width: 3rem;
+  height: 3rem;
   border-radius: 10px;
   background-color: var(--accent-color);
   border-style: none;
@@ -592,9 +593,14 @@ small {
   cursor: pointer;
   flex-shrink: 0;
   text-align: center;
+  align-items: center;
   text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   box-shadow: rgba(55, 47, 47, 0.5) 0 1px 10px;
   z-index: 1000;
+}
+
+#backToTop:hover {
+  background-color:#c45e8d;
 }
 
 /* Mobile menu */
@@ -899,6 +905,13 @@ padding-top: 0;
 /* Link component */
 
 }
+box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20px;
+}
+
 .project-link {
   display: block;
   text-decoration: none;
@@ -911,7 +924,18 @@ padding-top: 0;
   display: block;
 }
 
+.project-link.see-more {
+  margin-top: auto;
+  padding: 10px 0;
+  color: var(--light-link-color);
+  font-weight: 500;
+}
+
 .project-link:hover {
   text-decoration: none;
   color: inherit;
+}
+
+.project-link.see-more:hover {
+  color: var(--link-color);
 }

@@ -14,9 +14,9 @@ const ProjectCard = ({ id, imageSrc, imageAlt, title, description }) => {
       <h4>{title}</h4>
       <p>{description}</p>
       {id && (
-        <p>
-          <Link to={`/project/${id}`} className="project-link">See more</Link>
-        </p>//The "See more" section only appears when id exists
+        <Link to={`/project/${id}`} className="project-link see-more">
+          See more
+        </Link>//The "See more" section only appears when id exists
       )}
     </div>
   );

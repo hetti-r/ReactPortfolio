@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <main>
         <section id="projects">
-          <h2>What do I do?</h2>
+          <h2 className='projectsTitle'>What do I do?</h2>
           <div className="boxcontainer">
             <ProjectCard
               imageSrc="https://github.com/hetti-r/ReactPortfolio/blob/main/src/assets/projectPics/yeti.png?raw=true"
