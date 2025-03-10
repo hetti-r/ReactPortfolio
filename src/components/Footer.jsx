@@ -31,8 +31,9 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-
-            <small id="bottom">&copy; Hetti Rönnemaa {currentYear}</small>
+            <div className='footer-bottom'>
+                <small>&copy; Hetti Rönnemaa {currentYear}</small>
+            </div>
         </footer>
     )
 }

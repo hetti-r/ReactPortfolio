@@ -81,7 +81,7 @@
     "imageAlt": "Website preview, vector dodo and abstract pattern.",
     "title": "Drupal Theme",
     "description": "A custom theme for Drupal made as a part of my studies in Drupal course. The theme was made for a fictional company called Dodo News.",
-    "longDescription": "",
+    "longDescription": "A comprehensive Drupal theme development project showcasing integration of modern web technologies. Built using Drupal 11's theming system, featuring custom views.\nKey features include: responsive layout design, custom templates for content presentation and integration with Drupal's JSON:API for headless CMS capabilities. Development environment was set up using Lando for containerization, with proper version control through Git.\nThe project demonstrates proficiency in both frontend development (HTML, CSS, JavaScript) and Drupal's backend architecture, including content type configuration, taxonomy management, and block placement strategies.",
     "link": "https://github.com/hetti-r/Drupal-Icecream-Theme?tab=readme-ov-file",
     "type": "application"
   },
@@ -92,6 +92,7 @@
     "title": "React + Drupal Portfolio",
     "description": "This is a fully decoupled full-stack web application that uses Drupal for the backend and React for the frontend. React theme works as the front end view fetching data via JSON:API module and Drupal works behind the scenes as the CMS.",
     "longDescription": "A full-stack portfolio website demonstrating decoupling with Drupal and React. The backend uses Drupal 11 as a headless CMS with JSON:API module to serve structured content types (Home, About, Projects). The frontend is built with React, fetching data dynamically through RESTful endpoints.\nThe development environment utilizes Lando for local Drupal setup with MySQL database support. The architecture showcases modern web development practices with separated concerns - content management in Drupal and presentation in React.",
+    "video": "https://www.youtube.com/embed/lO4QDGy0Ghw?si=Hhvr90H3vVYgnUcn",
     "link": "https://github.com/hetti-r/Drupal-Portfolio",
     "type": "application"
   },
