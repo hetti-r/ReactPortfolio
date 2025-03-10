@@ -1,4 +1,16 @@
-[
+[  
+  {
+    "id": "16",
+    "imageSrc": "portfolio.png",
+    "imageAlt": "Website preview, pixel meadow.",
+    "title": "Portfolio Website",
+    "description": "This is my portfolio website made with React and Vite. The website is made to showcase my projects and skills.",
+    "longDescription": "",
+    
+    "link": "https://github.com/hetti-r/ReactPortfolio",
+    "figma": "https://embed.figma.com/design/z6KTXkCvnrCjiocgxsEtaE/Style-Guide?node-id=3-12&embed-host=share",
+    "type": "application"
+  },
   {
     "id": "15",
     "imageSrc": "druid.png",
@@ -77,9 +89,9 @@
     "id": "10",
     "imageSrc": "pfolio.png",
     "imageAlt": "Website preview, pixel coffee cup and text.",
-    "title": "Drupal Portfolio",
-    "description": "This is a progressively decoupled full-stack web application that uses Drupal for the backend and React for the frontend. React theme works as the front end view fetching data via JSON:API module and Drupal works behind the scenes as the CMS.",
-    "longDescription": "",
+    "title": "React + Drupal Portfolio",
+    "description": "This is a fully decoupled full-stack web application that uses Drupal for the backend and React for the frontend. React theme works as the front end view fetching data via JSON:API module and Drupal works behind the scenes as the CMS.",
+    "longDescription": "A full-stack portfolio website demonstrating decoupling with Drupal and React. The backend uses Drupal 11 as a headless CMS with JSON:API module to serve structured content types (Home, About, Projects). The frontend is built with React, fetching data dynamically through RESTful endpoints.\nThe development environment utilizes Lando for local Drupal setup with MySQL database support. The architecture showcases modern web development practices with separated concerns - content management in Drupal and presentation in React.",
     "link": "https://github.com/hetti-r/Drupal-Portfolio",
     "type": "application"
   },

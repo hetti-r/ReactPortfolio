@@ -1,10 +1,39 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 
 const SingleProject = () => {
   const { projectId } = useParams();
   const project = projectsData.find(p => p.id === projectId);
+
+  // Scroll to the projects section on page load
+  useEffect(() => {
+    // Disable default scroll restoration behavior
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+
+    // Ensure DOM is fully loaded before scrolling
+    const scrollToProjects = () => {
+      const element = document.getElementById('projects');
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop,
+          behavior: 'smooth'
+        });
+      } else {
+        requestAnimationFrame(scrollToProjects);
+      }
+    };
+    requestAnimationFrame(scrollToProjects);
+
+    // Cleanup scroll restoration
+    return () => {
+      if ('scrollRestoration' in window.history) {
+        window.history.scrollRestoration = 'auto';
+      }
+    };
+  }, []);
 
   if (!project) {
     return <div>Project not found</div>;
@@ -27,17 +56,17 @@ const SingleProject = () => {
             ))}
 
             {project.extraImages && (
-                <>
-                  {project.extraImages.map((image, index) => (
-                    <div key={index} className="extra-image-wrapper">
-                      <img 
-                        src={image.src} 
-                        alt={image.alt} 
-                        className="extra-project-image" 
-                      />
-                    </div>
-                  ))}
-                </>
+              <>
+                {project.extraImages.map((image, index) => (
+                  <div key={index} className="extra-image-wrapper">
+                    <img
+                      src={image.src}
+                      alt={image.alt}
+                      className="extra-project-image"
+                    />
+                  </div>
+                ))}
+              </>
             )}
 
             {project.figma && (
