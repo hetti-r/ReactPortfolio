@@ -259,7 +259,6 @@ margin: 0;
 .box {
   width: 26%;
   height: auto;
-  padding: 35px;
   background: var(--primary-color);
   color: var(--text-color);
   border-radius: 5px;
@@ -271,13 +270,23 @@ margin: 0;
   text-align: left;
   -webkit-box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
   box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
+  transition: box-shadow 0.5s ease; 
+
+}
+
+.box:hover {
+  box-shadow: 0px 10px 15px 5px rgba(64, 55, 80, 0.285);
+}
+
+.project-info {
+  padding: 0 35px 35px;
 }
 
 .projectimg {
-  border-radius: 5px;
+  border-radius: 5px 5px 0 0;
   align-items: center;
   height: auto;
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .projectimg:hover {
@@ -290,6 +299,39 @@ margin: 0;
 
 .box p {
   padding-bottom: 1rem;
+}
+
+
+/* Tags */
+
+.tags-container {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 1rem 0;
+
+}
+
+.tag {
+  padding: 0.4rem 0.6rem;
+  border: 1px transparent var(--text-color);
+  border-radius: 20px;
+  background: var(--light-link-color);
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: var(--light-text-color);
+  font-size: 14px;
+  box-shadow: 0px 0px 15px 8px rgba(77,57,64,0.07);
+}
+
+.tag:hover {
+  background: #f0f0f0;
+}
+
+.tag.active {
+  background: var(--accent-color);
+  color: white;
 }
 
 /* Single project */
@@ -883,7 +925,6 @@ html body .container .skillbox p {
   align-self: center;
   padding-bottom: 0;
 }
-
 
 small {
 margin-top: 0;
