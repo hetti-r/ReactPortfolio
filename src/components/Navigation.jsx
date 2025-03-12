@@ -45,7 +45,7 @@ const Navigation = () => {
     <div>
       <header>
         <div className="mobile-menu">
-        <button className="mobile" onClick={toggleMenu}>
+          <button className="mobile" onClick={toggleMenu}>
             <span className="material-symbols-outlined">menu</span>
           </button>
           <div id="navbar" className={menuOpen ? 'open' : ''}>
@@ -64,7 +64,7 @@ const Navigation = () => {
               <li><h3><a onClick={() => scrollToSection('aboutme')}>About Me</a></h3></li>
               <li><h3><a onClick={() => scrollToSection('skills')}>Skills</a></h3></li>
               <li><h3><Link to="/projects" onClick={handleProjectsClick}>Projects</Link></h3></li>
-              <li><h3><a onClick={() => scrollToSection('bottom')}>Contact Me</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact Me</a></h3></li>
             </ul>
           </nav>
           <div className="banner-text">
