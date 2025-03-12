@@ -14,6 +14,7 @@ const ProjectCard = ({ id, imageSrc, imageAlt, title, description, tags }) => {
       <div className="project-info">
         <h4>{title}</h4>
         <p>{description}</p>
+        <hr className="project-divider" />
         <div className='tags-container'>
           {tags && tags.map((tag, index) => (
             <button key={index} className='tag'>
@@ -21,11 +22,6 @@ const ProjectCard = ({ id, imageSrc, imageAlt, title, description, tags }) => {
             </button>
           ))}
         </div>
-        {id && (
-          <Link to={`/project/${id}`} className="project-link see-more">
-            See more
-          </Link>//The "See more" section only appears when id exists
-        )}
       </div>
     </div>
   );

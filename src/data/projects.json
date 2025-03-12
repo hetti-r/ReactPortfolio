@@ -5,7 +5,7 @@
     "imageAlt": "Website preview, pixel meadow.",
     "title": "Portfolio Website",
     "description": "This is my portfolio website made with React and Vite. The website is made to showcase my projects and skills.",
-    "longDescription": "",
+    "longDescription": "This portfolio website showcases my work as a developer, game designer, and creative professional. Built using React and Vite for optimal performance, the site features a responsive design that adapts seamlessly across devices. The visual style incorporates pixel art elements and a cohesive color scheme designed in Figma, reflecting my background in game development and digital art.\n\nKey features include:\n• Filtering for dynamic project cards \n• Single project pages for displaying my work across different mediums\n• Interactive skill visualization system\n• Responsive navigation and layout\n• Custom pixel art assets and animations\n• Integration with GitHub for project hosting\n\nThe development process focused on component reusability and clean code architecture. I implemented custom hooks for data management and utilized modern React features like functional components and hooks. The project helped me deepen my understanding of React's component lifecycle, state management, and responsive design principles.",
     "tags": ["React", "Vite", "Figma"],
     "link": "https://github.com/hetti-r/ReactPortfolio",
     "figma": "https://embed.figma.com/design/z6KTXkCvnrCjiocgxsEtaE/Style-Guide?node-id=3-12&embed-host=share",
