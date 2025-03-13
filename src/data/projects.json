@@ -107,7 +107,7 @@
     "imageAlt": "Pixel Clown game scene",
     "title": "Clown School Class 1: Farthabet",
     "description": "Farthabet is a 2D reaction game where the player must enter given letters as quickly as possible to appease the school master of the Clown School. The game was made for the Global Game Jam 2024 where I worked as a 2D graphics artist in a team.",
-    "longDescription": "",
+    "longDescription": "Clowns are known for being either uncannily scary or harmlessly funny, and in Clown School Class 1: Farthabet, you experiece both of these sides. This 2D reaction game challenges players to enter given letters as quickly as possible to appease the school master of the Clown School. The game was developed during Global Game Jam 2024 with theme: Make me laugh, where I contributed as a 2D graphics artist.\nAs part of the game development team, I was responsible for creating custom 2D artwork, including character designs, environmental assets, and UI elements. The project was developed in Unity and features a unique art style inspired by classic clown imagery. The game's core mechanics focus on player reaction time and accuracy, with a humorous twist (fart sounds) that captures the otherwise horrifying spirit of clown school antics.",
     "tags": ["2D Art", "Game Design", "Game Jam"],
     "link": "https://lennysmithgames.itch.io/clown-class-1-farthabet",
     "type": "game"
@@ -118,7 +118,7 @@
     "imageAlt": "Cartoon orange bird feeds a toy bird.",
     "title": "Pikkuli",
     "description": "Pikkuli is a children's animated series about a little bird named Pikkuli and his family. I worked as assistant screenwriter for the series. Pikkuli has been broadcasted in over 40 countries.",
-    "longDescription": "",
+    "longDescription": "Pikkuli is a children's animated series about a little bird named Pikkuli and his family. The series follows Pikkuli's adventures as he learns about the world around him and grows up with the help of his family. I worked as an assistant screenwriter for the upcoming second season of the series as well as the feature film Pikkuli and The Starlight Reindeer, contributing to the development of episode scripts and storylines.\n During this experience, I gained valuable insights into professional screenwriting processes, including script formatting, story arc development, and writing for young audiences. I learned to collaborate with a creative team, incorporate feedback from the director and co-writers, and adapt stories to meet both creative and production requirements. Working on an internationally broadcast series also taught me about creating content that resonates across different cultures while maintaining educational value.\n Pikkuli has been broadcasted in over 40 countries and has received critical acclaim for its educational content and engaging storytelling. The series is produced by Sun in Eye Productions and has been recognized for its positive impact on children's learning and development.",
     "tags": ["Screenwriting", "Animation"],
     "link": "https://areena.yle.fi/1-3832826",
     "type": "film"
@@ -129,7 +129,7 @@
     "imageAlt": "Snowy scenery with a yeti",
     "title": "Yeti Ski",
     "description": "Yeti Ski is a procedurally generated skiing game where the player jumps over obstacles as a yeti fleeing from the approaching avalanche. I worked as a 2D/concept artist and also did rigging and animating for this project in GamePro study program.",
-    "longDescription": "",
+    "longDescription": "Yeti Ski is a 2D skiing game developed during the GamePro study program. The game features procedurally generated levels where players control a yeti character skiing down a mountain. The core gameplay involves jumping over obstacles to survive the avalanche chasing the player.\nAs a 2D artist, I was responsible for creating concept art, character designs, and environmental assets. I also did animation and rigging, including character movement and avalanche animations. The project was developed in Unity and features custom 2D artwork created in Adobe Photoshop.",
     "tags": ["2D Art", "Animation", "Game Design"],
     "link": "https://h3tt1.itch.io/yeti-ski",
     "type": "game"
@@ -140,7 +140,7 @@
     "imageAlt": "Funny looking dodo birds",
     "title": "Dodo Sapiens",
     "description": "Dodo Sapiens was a final game project for my year of game studies in HEO academy. I worked as a game and level designer as well as an animator and 2D artist. Dodo Sapiens is a time limited game with a collect and drop - mechanics.",
-    "longDescription": "",
+    "longDescription": "Dodo Sapiens is a 2D game developed during the GamePro study program at HEO Academy. The game features a time-limited challenge where players must collect and drop dodo chicks to progress through levels. The core mechanics involve navigating the environment as well as avoiding obstacles and enemies to complete objectives.\nAs a game and level designer, I was responsible for creating the game's core mechanics, level layouts, and progression systems. I also contributed to the game's visual design, including character animations and environmental assets. The project was developed in Unity and features custom 2D artwork created in Adobe Photoshop.\nCreated by a team of three people: Liisa Pirhonen (Art),and Lenny Smith (Design, Code) and me.",
     "tags": ["2D Art", "Game Design", "Animation"],
     "pdf": "dodo.pdf",
     "video": "https://www.youtube.com/embed/rYB4JmqTs7k?si=eGmjV3VRYoK-fsqn",
@@ -152,9 +152,10 @@
     "imageAlt": "Red sick rat drawing with title.",
     "title": "Grandfather's ghost gave me quite the spook",
     "description": "My first time of participating in the Global Game Jam. In this game you play as a young woman who gets a task from her grandpa's ghost to take care of his garden. Player needs to protect the garden from attacking rats. My role was an animator and a 2D artist.",
-    "longDescription": "",
+    "longDescription": "Developed during Global Game Jam 2019 at FGJ Helsinki Arabia, this Unity-based game tells the story of a young girl who must help set her grandfather's ghost free to restore peace to her old home. \nPlayers use W-A-S-D controls to navigate through the environment while protecting the grandfather's beloved garden from invasive rats. The game features custom 2D artwork created in Adobe Photoshop, including character animations and environmental assets. \nCreated by a team of 8 people: Ivo Van 'T Wout and Lenny Smith (Design), Mikael Jaakkola (Programming), Hetti Rönnemaa and Liisa Pirhonen (Art), Ville Holmström (Sound), with Lenny Smith as Project Manager and Akseli Haataja as Production Assistant. Available for Windows platforms.",
     "tags": ["Game Design", "2D Art", "Game Jam"],
-    "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
+    "video": "https://www.youtube.com/embed/Hw4SKmZpsCo?si=2Iu0uuH05PE-pSKc",
+    "link": "https://v3.globalgamejam.org/2019/games/grandfathers-ghost-gave-me-quite-spook",
     "type": "game"
   },
   {
@@ -163,9 +164,8 @@
     "imageAlt": "Loading screen with footprints and forest silhouette with eyes.",
     "title": "Cryptid Watch",
     "description": "Game art and design for a game project in Game Design study program at HEO. Cryptid Watch is a game where the player is a cryptid photographer in a forest. The player needs to take pictures of cryptids and avoid getting caught by the forest ranger. I worked as the art lead and a game designer.",
-    "longDescription": "",
-    "tags": ["Game Design", "2D Art"],
-    "link": "https://www.youtube.com/watch?v=Hw4SKmZpsCo",
+    "longDescription": "Cryptid Watch is a game project developed during the game design study program at HEO Academy. The game is set in a mysterious forest where players take on the role of a cryptid photographer. The objective is to capture photos of elusive cryptids. \nAs the art lead and game designer, I was responsible for creating the game's visual style and designing the core gameplay mechanics. The project involved concept art, character design, and UI layout, with a focus on creating an immersive forest environment.",
+    "tags": ["Game Design", "2D Art", "Art Direction"],
     "type": "game"
   },
   {
@@ -174,8 +174,8 @@
     "imageAlt": "Drawn title on forest background.",
     "title": "Who Walks In The Forest Tapio?",
     "description": "Who Walks in the forest, Tapio? is an animated short film for children where a young immigrant girl, Fatima gets lost in the forest and befriends an elk calf and a forest spirit. The story is set in the present day and it has themes of finding your own identity, xenophobia and living in a foreign country.",
-    "longDescription": "",
-    "tags": ["Animation", "Screenwriting"],
+    "longDescription": "ho Walks in the forest, Tapio? is an animated short film for children where a young immigrant girl, Fatima gets lost in the forest and befriends an elk calf and a forest spirit. While they play together in the forest the girl transforms into a strange creature and needs the help of the forest god to get back to herself. The story is set in the present day and it has themes of finding your own identity, xenophobia and living in a foreign country.\nThe film was made as part of my Bachelor's thesis in The University of West of Scotland. The script and the animatic were made by me and I hope to make the film in full animation in the future.",
+    "tags": ["Animation", "Screenwriting", "2D Art"],
     "link": "https://www.youtube.com/watch?v=7WBa82oASkI",
     "type": "film"
   },
@@ -185,8 +185,8 @@
     "imageAlt": "Drawn animation of girl laying on a bed, black and white",
     "title": "Gaslighting",
     "description": "Gaslighting is an animated short film about a journey to recovery taking place in different parts of the mind. I worked as a writer, director, producer, and animator. It was the final work for my course in Voionmaa Institute. The film was selected for several film festivals, including Tampere Film Festival.",
-    "longDescription": "",
-    "tags": ["Animation", "Screenwriting", "Directing"],
+    "longDescription": "Gaslighting is an animated short film about a woman who struggles to overcome the aftermath of her emotional abuse. The journey to recovery takes her to different places of her mind.\n I worked as the writer/director/producer alongside with my cinematographer Veera Ruoholinna and my sound designer Aleksi Klemetti. The film was selected to Tampere Film Festival, Animatricks and Athens Animfest Competition Selection. ",
+    "tags": ["Animation", "Screenwriting", "Directing", "2D Art"],
     "link": "https://vimeo.com/139064740",
     "video": "https://player.vimeo.com/video/139064740?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
     "type": "film"
@@ -197,8 +197,9 @@
     "imageAlt": "Film preview, painted smiling moon.",
     "title": "Raketilla Kuuhun",
     "description": "Music video for the song Raketilla Kuuhun by the Finnish band Auringon Lapset. I worked as an art director with a small team. The video was made as a part of my studies in Voionmaa Institute.",
-    "longDescription": "",
+    "longDescription": "Raketilla Kuuhun is a music video for the song by the Finnish band Auringon Lapset. As a part of my studies in Voionmaa Institute, the project was made with a small team where I worked as an art director.\n The video was made with a small budget, a tight schedule and lots of passion. The sets in the video were hand painted and it was filmed as a one continuous shot.",
     "tags": ["Art Direction", "Music Video"],
+    "video": "https://www.youtube.com/embed/09SoMU-qrgU?si=PRZw1FWPIen_43A8",
     "link": "https://www.youtube.com/watch?v=09SoMU-qrgU",
     "type": "film"
   }
