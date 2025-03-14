@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
-import About from './pages/About.jsx';
 import Projects from './pages/Projects.jsx';
 import SingleProject from './pages/SingleProject.jsx'; // Import SingleProject component
 import Navigation from './components/Navigation.jsx';
@@ -14,7 +13,6 @@ function AppRoutes() {
       <Navigation />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/:projectId" element={<SingleProject />} /> {/* Add this route */}
         <Route path="*" element={<App />} />
