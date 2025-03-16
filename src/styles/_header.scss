@@ -1,0 +1,125 @@
+@use 'sass:map';
+
+.banner {
+    background-image: url("/src/assets/22sssiso2tausta.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    font-size: 35px;
+    background-image: none;
+    flex-direction: column;
+  }
+  
+  #name {
+    margin-top: 28vh;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 0%;
+  }
+  
+  header li {
+    display: inline-block;
+    flex-wrap: nowrap;
+  }
+  
+  ul li a {
+    margin: 0 20px 0;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0;
+  }
+  
+  .banner-text {
+    font-family: var(--pixel-font);
+    font-size: 9vh;
+    color: var(--light-text-color);
+    margin: 0.3rem auto;
+    opacity: 0;
+    animation: rotate-text-up 4.5s .75s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* banner text animations */
+  
+  @keyframes rotate-text-up {
+    0% {
+      transform: translate3d(0, 100px, 0);
+      opacity: 0;
+    }
+    
+    20%, 80% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    
+    100% {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  
+  .banner-text::after {
+    opacity: 1;
+  }
+  
+  /* Navbar */
+  #navbar {
+    display: none;
+  }
+  
+  nav a, #navbar a {
+    cursor: pointer;
+    color: var(--link-color);
+  }
+  
+  #navbar.open {
+    position: fixed;
+    margin-top: 2rem;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+    padding: 1rem;
+    z-index: 10000;
+    background-color: var(--primary-color);
+    font-family: var(--title-font);
+    font-size: 22px;
+    font-weight: 500;
+    text-shadow: rgba(189, 154, 192, 0.519) 0 3px 8px;
+    box-shadow: rgba(159, 107, 160, 0.5) 0 1px 30px;
+  }
+  
+  #navbar a {
+    color: var(--light-link-color);
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  #navbar.sticky {
+    padding: 1rem;
+    top: 0;
+  }
+  

@@ -2,9 +2,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
-import SingleProject from './pages/SingleProject.jsx'; // Import SingleProject component
-import Navigation from './components/Navigation.jsx';
-import Footer from './components/Footer.jsx';
+import SingleProject from './pages/SingleProject.jsx';
+import Navigation from './layout/Navigation.jsx';
+import Footer from './layout/Footer.jsx';
 import UpButton from './components/UpButton.jsx';
 
 function AppRoutes() {

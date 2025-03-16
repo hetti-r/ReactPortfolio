@@ -1,0 +1,93 @@
+@use 'sass:map';
+@use 'mixins' as *;
+
+.single-project {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    padding: 3rem;
+    padding-bottom: 4rem;
+    width: 65%;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    margin: 1rem;
+    @include card-shadow();
+  }
+  
+  .single-project a {
+    margin: 2rem;
+  }
+  
+  .single-project h2 {
+    padding: 0;
+    margin: 2rem 0 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .single-project p {
+    padding: 0;
+    margin: 0 6vw 1rem;
+    font-size: 1.2vw;
+  }
+  
+  .project-title-img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    padding: 0;
+  }
+  
+  .extra-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0 2rem;
+  }
+  
+  .extra-project-image {
+    align-self: center;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: contain;
+    padding: 0;
+    margin: 0 6vw 0;
+  }
+  
+  .figma-embed-wrapper {
+    position: 'relative';
+    max-width: 100%;
+    width: 100%;
+    margin: 1rem;
+    overflow: 'hidden';
+  }
+  
+  .video-embed-wrapper {
+    display: inline-block;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem;
+    overflow: hidden;
+    aspect-ratio: 16 / 9; /* Adjust this ratio based on your video's aspect ratio */
+  }
+  
+  .video-embed-wrapper iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none; /* Ensure no border is applied */
+  }
+  
+  .pdf-embed-wrapper {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    position: relative;
+    display: block;
+  }
+  
