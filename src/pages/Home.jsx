@@ -33,11 +33,14 @@ const Home = () => {
         <div className="aboutmeContainer">
           <section id="aboutme">
             <h2>About Me</h2>
-            <p>
-              I’m a screenwriter & game developer based in Helsinki, Finland. I'm currently studying full-stack development in Business College Helsinki. I love everything games and animation related and these interests have led me to work on various projects during the years. I appreciate working with all kinds of people and I have an ability to see the different strengths people possess. I'm good at team building. I tend to encourage and inspire other people. While working in a team I'm also keen on open dialogue and transparency. My current goal is to acquire professional-level coding skills in web development. I'm also making progress in narrative game design and creating a visual style.
-            </p>
+            <div className="about-content">
+              <p>
+                I’m a screenwriter & game developer based in Helsinki, Finland. I'm currently studying full-stack development in Business College Helsinki. I love everything games and animation related and these interests have led me to work on various projects during the years. I appreciate working with all kinds of people and I have an ability to see the different strengths people possess. I'm good at team building. I tend to encourage and inspire other people. While working in a team I'm also keen on open dialogue and transparency. My current goal is to acquire professional-level coding skills in web development. I'm also making progress in narrative game design and creating a visual style.
+              </p>
+
+              <img className="picAbout" src="https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/pilvet.png" alt="pixel clouds and stars" />
+            </div>
           </section>
-          <img className="picAbout" src="https://raw.githubusercontent.com/hetti-r/hetti-r.github.io/main/pilvet.png" alt="pixel clouds and stars" />
         </div>
 
         <section id="skills">
