@@ -1,0 +1,69 @@
+@use 'sass:map';
+@use 'mixins' as *;
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 8rem;
+  }
+  
+  #skills h2 {
+    padding-top: 5rem;
+  }
+  
+  #skills p {
+    padding: 0.5rem;
+    width: 80%;
+    align-self: center;
+    font-size: 14px;
+    padding-bottom: 2rem;
+  }
+  
+  .skillbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skillbox {
+    position: relative;
+    cursor: pointer;
+    width: 13vw;
+    height: auto;
+    color: var(--text-color);
+    border-radius: 5px; 
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .skillbox:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;
+  }
+  
+  .skillbox-img {
+    max-width: 5vw;
+    margin-top: 2vw;
+    align-self: center;
+  }
+  
+  .skillbox-bar {
+    width: 7vw;
+    align-self: center;
+    margin-top: -0.3rem;
+  }
+  

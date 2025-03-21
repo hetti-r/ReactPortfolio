@@ -35,8 +35,8 @@ const Home = () => {
           />
         </div>
 
-        <div className="aboutmeContainer">
-          <section id="aboutme">
+        <div className="journey-container">
+          <section class name="journey" >
             <h2>My Journey</h2>
             <p> </p>
 
