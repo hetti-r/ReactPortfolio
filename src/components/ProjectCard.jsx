@@ -16,11 +16,15 @@ const ProjectCard = ({ id, imageSrc, imageAlt, title, description, tags }) => {
         <p>{description}</p>
         <hr className="project-divider" />
         <div className='tags-container'>
-          {tags && tags.map((tag, index) => (
+          {tags ? tags.map((tag, index) => (
             <button key={index} className='tag'>
               {tag}
             </button>
-          ))}
+          )) : (
+            <button>
+              {tags}
+            </button>
+          )}
         </div>
       </div>
     </div>

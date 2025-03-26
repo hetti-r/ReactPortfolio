@@ -6,24 +6,13 @@ const AboutCard = () => {
             <div className="header">
                 <div className="top">
                     <div className="title">
-                        <p id="title2">about_me.txt</p>
+                        <p id="title2">⋆˚｡⊹ᰔ about_me.txt ୨ৎ</p>
                     </div>
                     <div className="symbols">
-                        <div>
-                            <span class="material-symbols-outlined">
-                                minimize
-                            </span>
-                        </div>
-                        <div>
-                            <span class="material-symbols-outlined">
-                                square
-                            </span>
-                        </div>
-                        <div>
-                            <span class="material-symbols-outlined">
-                                close
-                            </span>
-                        </div>
+
+                        <span className="material-symbols-outlined">
+                            more_horiz
+                        </span>
                     </div>
                 </div>
                 <div className='about-content'>
