@@ -60,11 +60,10 @@
   }
   
   .figma-embed-wrapper {
-    position: 'relative';
     max-width: 100%;
     width: 100%;
     margin: 1rem;
-    overflow: 'hidden';
+
   }
   
   .video-embed-wrapper {
@@ -72,7 +71,6 @@
     width: 100%;
     max-width: 100%;
     margin: 1rem;
-    overflow: hidden;
     aspect-ratio: 16 / 9; /* Adjust this ratio based on your video's aspect ratio */
   }
   
@@ -87,7 +85,6 @@
     width: 100%;
     height: auto;
     margin: 20px 0;
-    position: relative;
     display: block;
   }
   

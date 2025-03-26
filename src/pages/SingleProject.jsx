@@ -8,6 +8,18 @@ const SingleProject = () => {
 
   // Scroll to the projects section on page load
   useEffect(() => {
+    // Check if running on HTTPS
+    const isHttps = window.location.protocol === 'https:';
+
+    if (isHttps) {
+      document.cookie = "figma.did=value; SameSite=None; Secure";
+      console.log('Cookie set successfully over HTTPS');
+    } else {
+      console.warn('Cookie not set: HTTPS required for SameSite=None cookies');
+      // Optional: Redirect to HTTPS
+      // window.location.href = window.location.href.replace('http:', 'https:');
+    }
+
     // Disable default scroll restoration behavior
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
@@ -77,6 +89,12 @@ const SingleProject = () => {
                   height="720"
                   src={project.figma}
                   allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                  sandbox="allow-scripts allow-same-origin allow-presentation"
+                  onError={(e) => {
+                    console.error("Figma iframe loading error:", e);
+                  }}
                 />
               </div>
             )}
