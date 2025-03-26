@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const SkillCard = ({ imgSrc, imgAlt, barSrc, barAlt, skillName, skillText }) => {
+const SkillCard = ({ imgSrc, imgGifSrc, imgAlt, barSrc, barAlt, skillName, skillText }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
-    <div className="skillbox" title={skillText}>
-      <img className="skillbox-img" src={imgSrc} alt={imgAlt} />
+    <div className="skillbox" data-tooltip={skillText}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}>
+
+      <img className="skillbox-img" src={isHovered ? imgGifSrc : imgSrc}
+        alt={imgAlt} />
       <img className="skillbox-bar" src={barSrc} alt={barAlt} />
       <h5>{skillName}</h5>
     </div>
