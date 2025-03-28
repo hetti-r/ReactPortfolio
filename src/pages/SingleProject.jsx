@@ -47,7 +47,7 @@ const SingleProject = () => {
         <div className="boxcontainer">
           <div className='single-project'>
 
-            <img className='project-title-img' src={`/src/assets/projectPics/${project.imageSrc}`} alt={project.imageAlt} />
+            <img className='project-title-img' src={`https://raw.githubusercontent.com/hetti-r/ReactPortfolio/main/src/assets/projectPics/${project.imageSrc}`} alt={project.imageAlt} />
 
             <h2>{project.title}</h2>
 
