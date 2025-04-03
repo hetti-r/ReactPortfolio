@@ -274,14 +274,14 @@ small {
   width: 100%;
   max-width: 100%;
   margin: 1rem;
-  aspect-ratio: 16/9; /* Adjust this ratio based on your video's aspect ratio */
+  aspect-ratio: 16/9;
 }
 
 .video-embed-wrapper iframe {
   display: block;
   width: 100%;
   height: 100%;
-  border: none; /* Ensure no border is applied */
+  border: none;
 }
 
 .pdf-embed-wrapper {
@@ -291,6 +291,51 @@ small {
   display: block;
 }
 
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .single-project {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+  .single-project h2 {
+    font-size: 1.8rem;
+  }
+  .single-project p {
+    font-size: 1rem;
+  }
+  .project-title-img {
+    max-width: 100%;
+    height: auto;
+  }
+  .extra-project-image {
+    max-width: 100%;
+    height: auto;
+  }
+  .video-embed-wrapper {
+    aspect-ratio: 16/9;
+  }
+  .backButton, .moreButton {
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0;
+  }
+  .button-container button {
+    margin: 0;
+  }
+  .button-container a {
+    margin: 0.5rem 0 1.5rem;
+  }
+}
 .about-pic {
   border-radius: 10px;
   max-width: 16vw;
@@ -373,6 +418,36 @@ title {
   text-align: left;
 }
 
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  .about-card {
+    width: 90%;
+  }
+  .about-pic {
+    max-width: 30vw;
+    max-height: 30vw;
+  }
+  .about-content {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+  }
+  .top {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .header {
+    margin-bottom: 1rem;
+  }
+  #title2 {
+    font-size: 1.5rem;
+  }
+  .symbols {
+    margin-right: 0;
+    justify-content: center;
+  }
+}
 #skills {
   display: flex;
   flex-direction: column;
@@ -595,10 +670,9 @@ section {
   box-shadow: 0px 0px 15px 8px rgba(77, 57, 64, 0.07);
   transition: 0.5s;
 }
-
 .box:hover {
-  box-shadow: 0px 10px 15px 5px rgba(64, 55, 80, 0.285);
-  transform: translateY(-0.1rem);
+  box-shadow: 0px 0px 35px 28px rgba(77, 57, 64, 0.07);
+  transform: translateY(-7px);
 }
 
 .project-info {
@@ -794,6 +868,10 @@ section {
   }
   #navbar {
     display: none;
+  }
+  #navbar.open {
+    margin-left: 0;
+    padding-left: 0;
   }
   h6 {
     font-size: 22px;

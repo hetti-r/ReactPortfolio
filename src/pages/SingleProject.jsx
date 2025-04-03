@@ -108,7 +108,7 @@ const SingleProject = () => {
                 </iframe>
               </div>
             )}
-            <div>
+            <div className='button-container'>
               <button className="backButton" onClick={() => window.history.back()}>GO BACK</button>
               {project.link && (
                 <a className="moreButton" href={project.link} target="_blank" rel="noopener noreferrer">VIEW PROJECT</a> /* open in a new tab + security attributes */
