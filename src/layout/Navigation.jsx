@@ -61,7 +61,7 @@ const Navigation = () => {
           <h1 id="name">Hetti Rönnemaa</h1>
           <nav>
             <ul>
-              <li><h3><a onClick={() => scrollToSection('aboutme')}>About Me</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('projects')}>About Me</a></h3></li>
               <li><h3><a onClick={() => scrollToSection('skills')}>Skills</a></h3></li>
               <li><h3><Link to="/projects" onClick={handleProjectsClick}>Projects</Link></h3></li>
               <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact Me</a></h3></li>

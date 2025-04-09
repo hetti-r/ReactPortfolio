@@ -40,7 +40,7 @@ const Skills = () => {
                     imgSrc={floppy}
                     imgGifSrc={floppy_gif}
                     imgAlt="pixel floppy disc"
-                    barSrc={progressbar2}
+                    barSrc={progressbar5}
                     barAlt="pixel progressbar half full"
                     skillName="Backend"
                     skillText={"I am proficient in back-end technologies such as Symfony, Drupal and MySQL, which enable me to create robust and scalable server-side applications."}
@@ -49,7 +49,7 @@ const Skills = () => {
                     imgSrc={kone}
                     imgGifSrc={kone_gif}
                     imgAlt="pixel folder with flowers"
-                    barSrc={progressbar1}
+                    barSrc={progressbar2}
                     barAlt="pixel progressbar quite empty"
                     skillName="Frontend"
                     skillText={"I focus on front-end technologies such as HTML, CSS, and JavaScript. I am passionate about creating visually stunning and user-friendly websites that engage and inspire visitors."}
@@ -58,7 +58,7 @@ const Skills = () => {
                     imgSrc={folder}
                     imgGifSrc={folder_gif}
                     imgAlt="pixel folder with flowers"
-                    barSrc={progressbar5}
+                    barSrc={progressbar4}
                     barAlt="pixel progressbar quite empty"
                     skillName="Art"
                     skillText={"I have a strong background in 2D art, animation, and level design, which allows me to contribute to various aspects of game development."}
@@ -67,7 +67,7 @@ const Skills = () => {
                     imgSrc={heart}
                     imgGifSrc={heart_gif}
                     imgAlt="pixel crystal heart"
-                    barSrc={progressbar4}
+                    barSrc={progressbar3}
                     barAlt="pixel progressbar half full"
                     skillName="Teamwork"
                     skillText={"I'm good at team building and I tend to encourage and inspire other people. While working in a team I'm also keen on open dialogue and transparency."}
