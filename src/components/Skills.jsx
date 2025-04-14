@@ -24,7 +24,7 @@ import heart_gif from '../assets/icons/heart.gif'
 
 const Skills = () => {
     return (
-        <section id="skills">
+        <>
             <h2>My Skillset</h2>
             <div className="skillbox-container">
                 <SkillCard
@@ -82,7 +82,7 @@ const Skills = () => {
                     skillText={"I have 6+ years of experience writing for a variety of genres and formats. I am adept at crafting engaging and emotionally resonant stories that captivate and inspire audiences."}
                 />
             </div>
-        </section>
+        </>
     )
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
@@ -15,6 +15,20 @@ const Navigation = () => {
   };
 
   const [menuOpen, setMenuOpen] = useState(false);
+  const [pendingScroll, setPendingScroll] = useState(null);
+
+  useEffect(() => {
+    if (pendingScroll) {
+      const timer = setTimeout(() => {
+        const element = document.getElementById(pendingScroll);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+        setPendingScroll(null);
+      }, 300); // Match animation duration
+      return () => clearTimeout(timer);
+    }
+  }, [pendingScroll, location.pathname]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -24,21 +38,17 @@ const Navigation = () => {
     setMenuOpen(false); // Close the menu after clicking a link
     if (location.pathname !== '/') {
       navigate('/');
-      // Wait for navigation to complete before scrolling
-      setTimeout(() => {
-        const element = document.getElementById(sectionId);
-        if (element) element.scrollIntoView({ behavior: 'smooth' });
-      }, 100);
+      setPendingScroll(sectionId);
     } else {
       const element = document.getElementById(sectionId);
       if (element) element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
-  const handleProjectsClick = () => {
+  const handleProjectsClick = (e) => {
+    e.preventDefault(); // Prevent default Link behavior
     setMenuOpen(false);
     navigate('/projects');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
@@ -52,7 +62,7 @@ const Navigation = () => {
             <h6>
               <a onClick={() => scrollToSection('aboutme')}>About Me</a>
               <a onClick={() => scrollToSection('skills')}>Skills</a>
-              <Link to="/projects" onClick={handleProjectsClick}>Projects</Link>
+              <Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link>
               <a onClick={() => scrollToSection('bottom')}>Contact Me</a>
             </h6>
           </div>
@@ -63,7 +73,7 @@ const Navigation = () => {
             <ul>
               <li><h3><a onClick={() => scrollToSection('projects')}>About Me</a></h3></li>
               <li><h3><a onClick={() => scrollToSection('skills')}>Skills</a></h3></li>
-              <li><h3><Link to="/projects" onClick={handleProjectsClick}>Projects</Link></h3></li>
+              <li><h3><Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link></h3></li>
               <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact Me</a></h3></li>
             </ul>
           </nav>

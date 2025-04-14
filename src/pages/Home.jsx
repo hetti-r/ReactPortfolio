@@ -45,7 +45,8 @@ const Home = () => {
         </div>
 
         <Journey />
-        <Skills />
+        <section id="skills">
+          <Skills /></section>
       </main >
     </>
   )
