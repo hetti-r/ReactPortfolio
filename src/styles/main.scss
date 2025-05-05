@@ -140,17 +140,49 @@ section {
 .projectsTitle {
   align-self: center;
   text-align: center;
+  font-size: 3.5rem;
 }
 
 .boxcontainer {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.boxcontainer2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-wrapper2 {
+  flex: 0 1 calc(33.333% - 1.334rem);
+  min-width: 300px;
+  max-width: 400px;
+  display: flex;
+  margin: 0;
+}
+
+.card-wrapper {
+  flex: 1;
+  display: flex;
+  min-width: 300px;
+  width: 33.333%;
+  max-width: 400px;
 }
 
 .box {
-  width: 26%;
-  height: auto;
+  width: 100%;
+  height: 100%;
   background: var(--primary-color);
   color: var(--text-color);
   border-radius: 5px;
@@ -162,20 +194,21 @@ section {
   @include card-hover();
 }
 
-
 .project-info {
   padding: 0 35px 35px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .projectimg {
+  width: 100%;
+  object-fit: cover;
   border-radius: 5px 5px 0 0;
-  align-items: center;
-  height: auto;
-  opacity: 1;
 }
+
+/* Projects */
+
 
 .projectimg:hover {
   opacity: 1;
@@ -612,6 +645,11 @@ section {
 
   .footer-bottom {
     height: auto;
+  }
+
+  .card-wrapper {
+    width: 90%;
+    max-width: 350px;
   }
 }
 

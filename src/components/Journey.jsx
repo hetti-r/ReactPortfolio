@@ -5,7 +5,8 @@ export const Journey = () => {
         <div className="journey-container">
             <section className="journey" >
                 <h2>Journey so far...</h2>
-                <p> </p>
+                <h4>Education</h4>
+
 
             </section>
         </div>

@@ -61,7 +61,6 @@ const Navigation = () => {
           <div id="navbar" className={menuOpen ? 'open' : ''}>
             <h6>
               <a onClick={() => scrollToSection('aboutme')}>About Me</a>
-              <a onClick={() => scrollToSection('skills')}>Skills</a>
               <Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link>
               <a onClick={() => scrollToSection('bottom')}>Contact Me</a>
             </h6>
@@ -72,7 +71,6 @@ const Navigation = () => {
           <nav>
             <ul>
               <li><h3><a onClick={() => scrollToSection('projects')}>About Me</a></h3></li>
-              <li><h3><a onClick={() => scrollToSection('skills')}>Skills</a></h3></li>
               <li><h3><Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link></h3></li>
               <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact Me</a></h3></li>
             </ul>

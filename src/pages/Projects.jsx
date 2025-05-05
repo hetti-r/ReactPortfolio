@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../data/projects.json';
+import FadeInUpMotion from '../components/FadeInUpMotion';
 
 // Import all images from projectPics directory
 const images = import.meta.glob('/src/assets/projectPics/*.{png,jpg,jpeg}');
@@ -97,22 +98,25 @@ const Projects = () => {
             Films
           </button>
         </div>
-        <div className="boxcontainer">
+        <div className="boxcontainer2">
           {filteredProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              id={project.id}
-              imageSrc={loadedImages[project.imageSrc]}
-              imageAlt={project.imageAlt}
-              title={project.title}
-              description={project.description}
-              link={project.link}
-              tags={project.tags}
-            />
+            <FadeInUpMotion whileInView={{ y: 0 }} delay={0.2} >
+              <div className="card-wrapper2" key={project.id}>
+                <ProjectCard
+                  id={project.id}
+                  imageSrc={loadedImages[project.imageSrc]}
+                  imageAlt={project.imageAlt}
+                  title={project.title}
+                  description={project.description}
+                  link={project.link}
+                  tags={project.tags}
+                />
+              </div>
+            </FadeInUpMotion>
           ))}
         </div>
       </section>
-    </main>
+    </main >
   );
 };
 
