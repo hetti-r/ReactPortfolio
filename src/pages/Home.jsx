@@ -30,7 +30,7 @@ const Home = () => {
                 imageSrc={yetiImg}
                 imageAlt="Snowy scenery with a yeti"
                 title="Games"
-                description="My journey in game design has been marked by a commitment to creating engaging and immersive experiences for players. I have a strong background in 2D art, animation, and level design, which allows me to contribute to various aspects of game development. My work is characterized by a keen eye for detail, a love for storytelling, and a dedication to pushing the boundaries of interactive entertainment."
+                description="I specialize in creating engaging game experiences through 2D art, animation, and level design. My work combines attention to detail with compelling storytelling to deliver immersive interactive entertainment."
                 tags={['Game Design', '2D&3D Art', 'Unity']}
               />
             </FadeInUpMotion>
@@ -41,7 +41,7 @@ const Home = () => {
                 imageSrc={tbuddyImg}
                 imageAlt="Website preview, island picture behind symbols."
                 title="Websites"
-                description="I have a strong foundation in web development, with a focus on front-end frameworks such as React and Bootstrap. I am passionate about creating visually stunning and user-friendly websites that engage and inspire visitors. I am also proficient in back-end technologies such as Symfony, Drupal and MySQL, which enable me to create robust and scalable server-side applications."
+                description="I create responsive and user-friendly websites using React and modern front-end frameworks. My expertise extends to back-end development with Symfony, Drupal, and MySQL for building robust web applications."
                 tags={['Web Design', 'PHP', 'React', 'UI/UX']}
               />
             </FadeInUpMotion>
@@ -52,8 +52,8 @@ const Home = () => {
                 imageSrc={gasImg}
                 imageAlt="Drawn animation of girl laying on a bed, black and white"
                 title="Films"
-                description="As a screenwriter, my work is characterized by a passion for storytelling, a commitment to creating compelling characters, and a dedication to pushing the boundaries of visual storytelling. I have experience writing for a variety of genres and formats, including feature films, television series, and short films. I am adept at crafting engaging and emotionally resonant stories that captivate and inspire audiences."
-                tags={['Film & TV', 'Screenwriting', 'Animation']}
+                description="I craft compelling stories and characters for film and television. My screenwriting spans multiple genres and formats, focusing on emotionally resonant narratives that captivate audiences."
+                tags={['Film&TV', 'Screenwriting', 'Animation']}
               />
             </FadeInUpMotion>
           </div>

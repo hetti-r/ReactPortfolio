@@ -3,35 +3,78 @@ import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import Projects from './pages/Projects.jsx';
 import SingleProject from './pages/SingleProject.jsx';
+import { AnimatePresence } from 'framer-motion';
+import PageWrapper from './components/PageWrapper.jsx';
 import Navigation from './layout/Navigation.jsx';
 import Footer from './layout/Footer.jsx';
 import UpButton from './components/UpButton.jsx';
-import { AnimatePresence } from 'motion/react';
-import PageWrapper from './components/PageWrapper.jsx';
-import { motion } from 'motion/react';
 
 function RouterContent() {
   const location = useLocation();
   return (
-    <AnimatePresence mode='wait'>
-      <motion.div
-        key={location.pathname}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        <Navigation />
+    <>
+      <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<PageWrapper><Home /></PageWrapper>} />
-          <Route path="/projects" element={<PageWrapper><Projects /></PageWrapper>} />
-          <Route path="/project/:projectId" element={<PageWrapper><SingleProject /></PageWrapper>} />
-          <Route path="*" element={<PageWrapper><App /></PageWrapper>} />
+          <Route
+            path="/"
+            element={
+              <PageWrapper>
+                <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                  <Navigation />
+                  <main style={{ flex: '1 0 auto' }}>
+                    <Home />
+                  </main>
+                  <Footer />
+                </div>
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/projects"
+            element={
+              <PageWrapper>
+                <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                  <Navigation />
+                  <main style={{ flex: '1 0 auto' }}>
+                    <Projects />
+                  </main>
+                  <Footer />
+                </div>
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="/project/:projectId"
+            element={
+              <PageWrapper>
+                <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                  <Navigation />
+                  <main style={{ flex: '1 0 auto' }}>
+                    <SingleProject />
+                  </main>
+                  <Footer />
+                </div>
+              </PageWrapper>
+            }
+          />
+          <Route
+            path="*"
+            element={
+              <PageWrapper>
+                <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+                  <Navigation />
+                  <main style={{ flex: '1 0 auto' }}>
+                    <App />
+                  </main>
+                  <Footer />
+                </div>
+              </PageWrapper>
+            }
+          />
         </Routes>
-        <Footer />
-        <UpButton />
-      </motion.div>
-    </AnimatePresence>
+      </AnimatePresence>
+      <UpButton />
+    </>
   );
 }
 

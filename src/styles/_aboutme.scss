@@ -73,12 +73,13 @@
   .about-content {
     display: flex;
     flex-direction: row;
-    height: 55vh;
-    padding: 3rem;
+    height: fit-content;
+    padding: 3rem 3rem 5rem;
     background-color: var(--primary-color);
     border-radius: 0 0 5px 5px;
     text-align: left;
     font-size: 18px;
+
   }
 
   /* Media Queries */
