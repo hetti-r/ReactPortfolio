@@ -39,7 +39,8 @@ const Skills = () => {
                         barSrc={progressbar4}
                         barAlt="pixel progressbar half full"
                         skillName="Game Design"
-                        skillText={"I specialize in Unity game development, combining C# programming with UI systems and level design to create engaging gameplay experiences."}
+                        skillText={"• Unity\n• C#\n• UI&UX\n• Level Design\n• Narrative Design"}
+
                     />
                 </FadeInUpMotion>
                 <FadeInUpMotion delay={0.2}>
@@ -50,7 +51,7 @@ const Skills = () => {
                         barSrc={progressbar5}
                         barAlt="pixel progressbar half full"
                         skillName="Backend"
-                        skillText={"I am proficient in back-end technologies such as Symfony, Drupal and MySQL, which enable me to create robust and scalable server-side applications."}
+                        skillText={"• PHP\n• Symfony\n• Drupal\n• MySQL\n• Firebase\n• AWS\n• Docker\n• Kubernetes\n• REST API\n• CI/CD"}
                     />
                 </FadeInUpMotion>
                 <FadeInUpMotion delay={0.4}>
@@ -72,7 +73,7 @@ const Skills = () => {
                         barSrc={progressbar4}
                         barAlt="pixel progressbar quite empty"
                         skillName="Art"
-                        skillText={"I have a strong background in 2D art, animation, VFX, video editing, and Figma, enabling me to contribute effectively to game and web development projects."}
+                        skillText={"• 2D&3D Art\n• Animation\n• Pixel Art\n• Storyboarding\n• Character Design\n• Concept Art\n• Figma\n• Photoshop\n• AfterEffects\n• Blender"}
                     />
                 </FadeInUpMotion>
                 <FadeInUpMotion delay={0.8}>
@@ -83,7 +84,7 @@ const Skills = () => {
                         barSrc={progressbar3}
                         barAlt="pixel progressbar half full"
                         skillName="Teamwork"
-                        skillText={"I'm good at team building and I tend to encourage and inspire other people. While working in a team I'm also keen on open dialogue and transparency."}
+                        skillText={"\n• Agile/Scrum\n• Git, GitHub\n• Jira\n• Trello\n• Discord\n• Slack"}
                     />
                 </FadeInUpMotion>
                 <FadeInUpMotion delay={1}>

@@ -11,7 +11,7 @@ const Footer = () => {
                     <FadeInUpMotion amount={0.5}>
                         <h4>Contact Me</h4>
                     </FadeInUpMotion>
-                    <FadeInUpMotion delay={0.2}>
+                    <FadeInUpMotion delay={0.4}>
                         <div className="social-links">
                             <a href="mailto:hetti.ronnemaa@gmail.com" className="social-link">
                                 <i className="fas fa-envelope"></i>

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <main>
-        <section id="projects">
+        <section id="home-projects">
           <div className="boxcontainer">
             <AboutCard />
           </div>
