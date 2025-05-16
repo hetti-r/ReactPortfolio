@@ -16,29 +16,36 @@ const Navigation = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [pendingScroll, setPendingScroll] = useState(null);
+  const [isNavigating, setIsNavigating] = useState(false);
 
   useEffect(() => {
-    if (pendingScroll) {
+    if (pendingScroll && location.pathname === '/' && !isNavigating) {
       const timer = setTimeout(() => {
         const element = document.getElementById(pendingScroll);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
         }
         setPendingScroll(null);
-      }, 300); // Match animation duration
+      }, 500);
       return () => clearTimeout(timer);
     }
-  }, [pendingScroll, location.pathname]);
+  }, [pendingScroll, location.pathname, isNavigating]);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
   const scrollToSection = (sectionId) => {
-    setMenuOpen(false); // Close the menu after clicking a link
+    setMenuOpen(false);
     if (location.pathname !== '/') {
-      navigate('/');
+      setIsNavigating(true);
       setPendingScroll(sectionId);
+      navigate('/', {
+        state: { fromProjects: true, targetSection: sectionId }
+      });
+      setTimeout(() => {
+        setIsNavigating(false);
+      }, 300);
     } else {
       const element = document.getElementById(sectionId);
       if (element) element.scrollIntoView({ behavior: 'smooth' });
@@ -46,9 +53,10 @@ const Navigation = () => {
   };
 
   const handleProjectsClick = (e) => {
-    e.preventDefault(); // Prevent default Link behavior
+    e.preventDefault();
     setMenuOpen(false);
-    navigate('/projects');
+    // Use replace instead of push to avoid scroll state issues
+    navigate('/projects', { replace: true });
   };
 
   return (
@@ -70,7 +78,7 @@ const Navigation = () => {
           <h1 id="name">Hetti Rönnemaa</h1>
           <nav>
             <ul>
-              <li><h3><a onClick={() => scrollToSection('projects')}>About Me</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('about-container')}>About Me</a></h3></li>
               <li><h3><Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link></h3></li>
               <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact Me</a></h3></li>
             </ul>

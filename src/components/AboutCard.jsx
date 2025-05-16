@@ -1,11 +1,49 @@
-import React from 'react'
-import { motion } from 'motion/react';
+import React, { useEffect } from 'react'
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
+import { useRef } from 'react';
 
 const AboutCard = () => {
+    const controls = useAnimation();
+    const location = useLocation();
+    const ref = useRef(null);
+    const isInView = useInView(ref, {
+        margin: "-100px",
+        once: true
+    });
+
+    useEffect(() => {
+        // Start animation when component mounts or comes into view
+        if (isInView || location.state?.fromProjects) {
+            controls.start({
+                opacity: 1,
+                y: 0,
+                transition: {
+                    duration: 0.8,
+                    ease: "easeInOut"
+                }
+            });
+
+            // Handle scrolling with a smoother transition
+            if (location.state?.fromProjects && location.state.targetSection) {
+                const element = document.getElementById(location.state.targetSection);
+                if (element) {
+                    setTimeout(() => {
+                        element.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }, 300);
+                }
+            }
+        }
+    }, [isInView, controls, location]);
+
     return (
         <motion.div
+            ref={ref}
             initial={{ opacity: 0, y: 80 }}
-            whileInView={{ opacity: 1, y: -50 }}
+            animate={controls}
             transition={{
                 duration: 0.8,
                 ease: "easeInOut",
@@ -13,10 +51,6 @@ const AboutCard = () => {
                 bounce: 0.05,
                 delay: 0.1,
                 damping: 29,
-            }}
-            viewport={{
-                once: true,
-                amount: 0.1,
             }}>
             <div className="about-card">
                 <div className="header">

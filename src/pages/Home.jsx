@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <main>
-        <section id="home-projects">
+        <section id="about-container">
           <div className="boxcontainer">
             <AboutCard />
           </div>

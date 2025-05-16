@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import React from 'react';
+import ParticleEffect from './ParticleEffect';
 
 const PageWrapper = ({ children }) => {
     return (
@@ -20,10 +21,12 @@ const PageWrapper = ({ children }) => {
                 duration: 1,
                 ease: "easeInOut"
             }}
+            style={{ position: 'relative' }}
         >
             {children}
+            <ParticleEffect />
         </motion.div>
-    )
-}
+    );
+};
 
-export default PageWrapper
+export default PageWrapper;

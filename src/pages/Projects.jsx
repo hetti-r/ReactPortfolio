@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import ProjectCard from '../components/ProjectCard';
 import projectsData from '../data/projects.json';
 import FadeInUpMotion from '../components/FadeInUpMotion';
@@ -7,35 +8,32 @@ import FadeInUpMotion from '../components/FadeInUpMotion';
 const images = import.meta.glob('/src/assets/projectPics/*.{png,jpg,jpeg}');
 
 const Projects = () => {
+  const location = useLocation();
 
-  // Scroll to the projects section on page load
   useEffect(() => {
     // Disable default scroll restoration behavior
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
 
-    // Ensure DOM is fully loaded before scrolling
-    const scrollToProjects = () => {
+    // Wait for component to mount and transition to complete
+    const timer = setTimeout(() => {
       const element = document.getElementById('projects');
       if (element) {
         window.scrollTo({
           top: element.offsetTop,
           behavior: 'smooth'
         });
-      } else {
-        requestAnimationFrame(scrollToProjects);
       }
-    };
-    requestAnimationFrame(scrollToProjects);
+    }, 500); // Increased delay for smoother transition
 
-    // Cleanup scroll restoration
     return () => {
+      clearTimeout(timer);
       if ('scrollRestoration' in window.history) {
         window.history.scrollRestoration = 'auto';
       }
     };
-  }, []);
+  }, []); // Run only on mount
 
   const [filter, setFilter] = useState('all');
   const [loadedImages, setLoadedImages] = useState({});
@@ -99,9 +97,13 @@ const Projects = () => {
           </button>
         </div>
         <div className="boxcontainer2">
-          {filteredProjects.map((project) => (
-            <FadeInUpMotion whileInView={{ y: 0 }} delay={0.2} >
-              <div className="card-wrapper2" key={project.id}>
+          {filteredProjects.map((project, index) => (
+            <FadeInUpMotion
+              key={project.id}
+              whileInView={{ y: 0 }}
+              delay={index % 3 === 0 ? 0 : 0.2 * (index % 3)} // Reset delay every 3 cards
+            >
+              <div className="card-wrapper2">
                 <ProjectCard
                   id={project.id}
                   imageSrc={loadedImages[project.imageSrc]}

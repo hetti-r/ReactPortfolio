@@ -1,6 +1,17 @@
 @use 'sass:map';
 @use 'mixins' as *;
 
+#about-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgb(108,133,156);
+  background: linear-gradient(180deg, rgba(108,133,156,1) 0%, rgba(239,231,230,0) 100%);
+  margin: 0;
+  padding-bottom: 0;
+}
+
 .about-pic {
     border-radius: 10px;
     max-width: 16vw;
@@ -15,6 +26,7 @@
     margin: 0 auto;
     background-color: var(--primary-color);
     border-radius: 8px;
+    transform: translateY(-3rem);
     z-index: 1;
 
   }

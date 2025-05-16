@@ -48,7 +48,7 @@ const Skills = () => {
                         imgSrc={floppy}
                         imgGifSrc={floppy_gif}
                         imgAlt="pixel floppy disc"
-                        barSrc={progressbar5}
+                        barSrc={progressbar2}
                         barAlt="pixel progressbar half full"
                         skillName="Backend"
                         skillText={"• PHP\n• Symfony\n• Drupal\n• MySQL\n• Firebase\n• AWS\n• Docker\n• Kubernetes\n• REST API\n• CI/CD"}
@@ -62,7 +62,7 @@ const Skills = () => {
                         barSrc={progressbar2}
                         barAlt="pixel progressbar quite empty"
                         skillName="Frontend"
-                        skillText={"I focus on front-end technologies such as React and Tailwind CSS to create visually stunning and user-friendly websites that engage and inspire visitors."}
+                        skillText={"• Javascript\n• Typescript\n• React\n• Bootstrap\n• SASS\n• TailwindCSS\n• Redux\n• Framer Motion"}
                     />
                 </FadeInUpMotion>
                 <FadeInUpMotion delay={0.6}>
@@ -84,7 +84,7 @@ const Skills = () => {
                         barSrc={progressbar3}
                         barAlt="pixel progressbar half full"
                         skillName="Teamwork"
-                        skillText={"\n• Agile/Scrum\n• Git, GitHub\n• Jira\n• Trello\n• Discord\n• Slack"}
+                        skillText={"\n• Agile/Scrum\n• Git, GitHub\n• Jira\n• Trello\n• Discord\n• Slack\n• Google Docs\n• Miro"}
                     />
                 </FadeInUpMotion>
                 <FadeInUpMotion delay={1}>
@@ -95,7 +95,7 @@ const Skills = () => {
                         barSrc={progressbar3}
                         barAlt="pixel progressbar almost full"
                         skillName="Screenwriting"
-                        skillText={"With 6+ years of experience in various genres, I craft engaging and emotionally resonant stories that captivate audiences."}
+                        skillText={"• 6+ years of XP\n• TV shows\n• Shortfilms\n• Feature film\n• various genres\n• Animation\n• Live action\n• Script editing\n• Translations\n• Storyboarding\n• Team Writing\n• Pitching"}
                     />
                 </FadeInUpMotion>
             </div>
