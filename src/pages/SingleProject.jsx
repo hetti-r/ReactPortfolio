@@ -1,10 +1,32 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import projectsData from '../data/projects.json';
+
+// Add this at the top of your file
+const images = import.meta.glob('/src/assets/projectPics/*.{png,jpg,jpeg}');
 
 const SingleProject = () => {
   const { projectId } = useParams();
   const project = projectsData.find(p => p.id === projectId);
+  const [projectImage, setProjectImage] = useState(null);
+
+  // Add this useEffect to load the image
+  useEffect(() => {
+    const loadProjectImage = async () => {
+      if (project) {
+        const imagePath = `/src/assets/projectPics/${project.imageSrc}`;
+        try {
+          if (images[imagePath]) {
+            const module = await images[imagePath]();
+            setProjectImage(module.default);
+          }
+        } catch (error) {
+          console.error('Error loading project image:', error);
+        }
+      }
+    };
+    loadProjectImage();
+  }, [project]);
 
   // Scroll to the projects section on page load
   useEffect(() => {
@@ -47,7 +69,12 @@ const SingleProject = () => {
         <div className="boxcontainer">
           <div className='single-project'>
 
-            <img className='project-title-img' src={`/src/assets/projectPics/${project.imageSrc}`} alt={project.imageAlt} />
+            {/* Update the img src to use the loaded image */}
+            <img 
+              className='project-title-img' 
+              src={projectImage} 
+              alt={project.imageAlt} 
+            />
 
             <h2>{project.title}</h2>
 

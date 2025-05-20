@@ -28,7 +28,7 @@ const Footer = () => {
                                 <span>LinkedIn</span>
                             </a>
 
-                            <a href="https://artstation.com/yourprofile" className="social-link">
+                            <a href="https://www.artstation.com/hettironnemaa" className="social-link">
                                 <i className="fab fa-artstation"></i>
                                 <span>ArtStation</span>
                             </a>
