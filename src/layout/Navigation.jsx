@@ -70,7 +70,7 @@ const Navigation = () => {
             <h6>
               <a onClick={() => scrollToSection('aboutme')}>About Me</a>
               <Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link>
-              <a onClick={() => scrollToSection('bottom')}>Contact Me</a>
+              <a onClick={() => scrollToSection('bottom')}>Contact</a>
             </h6>
           </div>
         </div>
@@ -80,7 +80,7 @@ const Navigation = () => {
             <ul>
               <li><h3><a onClick={() => scrollToSection('about-container')}>About Me</a></h3></li>
               <li><h3><Link to="/projects" onClick={(e) => handleProjectsClick(e)}>Projects</Link></h3></li>
-              <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact Me</a></h3></li>
+              <li><h3><a onClick={() => scrollToSection('footercontainer')}>Contact</a></h3></li>
             </ul>
           </nav>
           <div className="banner-text">

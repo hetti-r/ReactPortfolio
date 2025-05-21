@@ -97,38 +97,52 @@
   /* Media Queries */
 
 @include responsive(600px) {
+  #about-container {
+    padding: 0;
+    margin: 0;
+  }
     .about-card {
-      width: 90%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      transform: translateY(0); // Remove negative margin on mobile
     }
   
     .about-pic {
-      max-width: 30vw;
-      max-height: 30vw;
+      max-width: 150px; // Fixed width instead of viewport units
+      max-height: 150px; // Fixed height for better proportions
+      margin: 2rem auto 1rem; // Center the image and add some space
+      display: block; // Helps with centering
     }
   
     .about-content {
       flex-direction: column;
       height: auto;
-      padding: 2rem;
+      padding: 1rem;
+
+      align-items: center; // Center content on mobile
+      text-align: center; // Center text on mobile
+      
+      p {
+        margin: 0 1rem; // Add horizontal margins to text
+        font-size: 16px; // Slightly smaller font for mobile
+        line-height: 1.6; // Better readability
+      }
     }
   
     .top {
-      flex-direction: column;
+      flex-direction: row; // Keep header in one line
       align-items: center;
-      height: auto;
-    }
-  
-    .header {
-      margin-bottom: 1rem;
+      height: 3rem; // Increased height for better touch targets
+      padding: 0 1rem; // Add some horizontal padding
     }
   
     #title2 {
-      font-size: 1.5rem;
+      font-size: 1rem; // Adjusted font size
+      padding-left: 1rem; // Reduced padding
     }
   
     .symbols {
-      margin-right: 0;
-      justify-content: center;
+      margin-right: 0.5rem;
     }
-  
-  }
+}

@@ -23,8 +23,6 @@
     margin-bottom: 2rem;
 }
 
-.journey-work {
-}
 
 .education-item, .work-item {
     display: grid;
@@ -67,3 +65,47 @@
     gap: 2rem;
     margin-bottom: 0;
   }
+
+@include responsive(600px) {
+  .journey-container {
+    margin-top: 2rem;
+    padding: 0;
+  }
+
+  .journey {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 16px;
+  }
+
+  .journey-content {
+    gap: 2rem;
+  }
+
+  .education-item, .work-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .timeline {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  .details h5 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .details p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  .journey-education, .journey-work {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+}

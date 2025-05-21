@@ -130,3 +130,56 @@
     align-self: center;
     margin-top: -0.3rem;
   }
+
+    /* Media Queries */
+
+@include responsive(600px) {
+
+
+  #skills {
+    padding: 0;
+    padding-bottom: 12vw;
+    padding-top: 12vw;
+  }
+
+  #skills h2 {
+    padding: 0rem;
+  }
+
+  #skills h5 {
+    padding-bottom: 1rem;
+    margin-top: 0.1rem;
+    font-size: 11px;
+  }
+
+  .skillbox-bar {
+    margin: 0;
+    padding: 0;
+    width: 14vw;
+  }
+
+  .skillbox {
+    width: 25vw;
+    height: auto;
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 5vw;
+    margin: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  html body .container .skillbox p {
+    font-size: 6px;
+  }
+
+  .skillbox-img {
+    max-width: 12vw;
+    padding-top: 1.6rem;
+    align-self: center;
+    padding-bottom: 0;
+  }
+
+}
