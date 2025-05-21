@@ -105,14 +105,14 @@
       width: 100%;
       margin: 0;
       padding: 0;
-      transform: translateY(0); // Remove negative margin on mobile
+      transform: translateY(-30px);
     }
-  
+
     .about-pic {
-      max-width: 150px; // Fixed width instead of viewport units
-      max-height: 150px; // Fixed height for better proportions
-      margin: 2rem auto 1rem; // Center the image and add some space
-      display: block; // Helps with centering
+      max-width: 150px; 
+      max-height: 150px; 
+      margin: 2rem auto 1rem; 
+      display: block; 
     }
   
     .about-content {
@@ -120,26 +120,26 @@
       height: auto;
       padding: 1rem;
 
-      align-items: center; // Center content on mobile
-      text-align: center; // Center text on mobile
+      align-items: center; 
+      text-align: center; 
       
       p {
-        margin: 0 1rem; // Add horizontal margins to text
-        font-size: 16px; // Slightly smaller font for mobile
-        line-height: 1.6; // Better readability
+        margin: 0 1rem; 
+        font-size: 16px; 
+        line-height: 1.6; 
       }
     }
   
     .top {
       flex-direction: row; // Keep header in one line
       align-items: center;
-      height: 3rem; // Increased height for better touch targets
-      padding: 0 1rem; // Add some horizontal padding
+      height: 2rem; 
+      padding: 0 1rem; 
     }
   
     #title2 {
-      font-size: 1rem; // Adjusted font size
-      padding-left: 1rem; // Reduced padding
+      font-size: 1rem; 
+      padding-left: 1rem; 
     }
   
     .symbols {

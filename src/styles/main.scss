@@ -384,6 +384,39 @@ section {
   color: white;
 }
 
+
+/* Link component */
+
+.project-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-link.see-more {
+  display: block;
+  margin-top: 1rem;
+  text-align: left;
+  padding: 10px 0;
+  color: var(--light-link-color);
+  font-weight: 500;
+}
+
+.project-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-link.see-more:hover {
+  color: var(--link-color);
+}
+
 /* Media Queries */
 
 @include responsive(600px) {
@@ -514,15 +547,17 @@ section {
     margin-top: -2rem;
     margin-bottom: -2rem;
   }
-.projectsTitle {
-  align-self: center;
-  text-align: center;
-  font-size: 2rem;
-}
+
+  .projectsTitle {
+    align-self: center;
+    text-align: center;
+    padding: 0 0 1rem 0;
+    font-size: 2rem;
+  }
 
   #projects {
     margin: 0%;
-    padding: 2rem;
+    padding: 0rem;
     padding-bottom: 2rem;
     padding-top: 0;
   }
@@ -532,57 +567,35 @@ section {
   }
 
   .boxcontainer {
-    margin-top: 0;
+    margin: 0 auto;  // Add auto margins
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;  // Stack boxes vertically
+    align-items: center;     // Center boxes horizontally
+    width: 100%;            // Full width container
   }
 
   .box {
-    width: 80%;
-    padding: 2rem;
-    margin: 1rem;
+    width: 100%;           // Full width on mobile
+    max-width: 400px;      // Maximum width
+    padding: 0;
+    margin: 0.5rem 0;      // Vertical margins only
   }
 
   .card-wrapper {
-    width: 90%;
-    max-width: 350px;
+    width: 100%;          // Full width wrapper
+    max-width: 400px;     // Maximum width
+    margin: 0 auto;       // Center horizontally
   }
-.card-wrapper2 {
+
+  .card-wrapper2 {
     width: 100%;
     margin: 0 auto;  // Centers horizontally
     padding: 0;
     display: flex;
     justify-content: center;  // Centers flex content horizontally
     align-items: center;      // Centers flex content vertically
-}
+  }
+
 }
 
-/* Link component */
-
-.project-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-link img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.project-link.see-more {
-  display: block;
-  margin-top: 1rem;
-  text-align: left;
-  padding: 10px 0;
-  color: var(--light-link-color);
-  font-weight: 500;
-}
-
-.project-link:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.project-link.see-more:hover {
-  color: var(--link-color);
-}
