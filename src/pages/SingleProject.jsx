@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 
-// Add this at the top of your file
 const images = import.meta.glob('/src/assets/projectPics/*.{png,jpg,jpeg}');
 
 const SingleProject = () => {
@@ -10,7 +9,6 @@ const SingleProject = () => {
   const project = projectsData.find(p => p.id === projectId);
   const [projectImage, setProjectImage] = useState(null);
 
-  // Add this useEffect to load the image
   useEffect(() => {
     const loadProjectImage = async () => {
       if (project) {
@@ -69,11 +67,10 @@ const SingleProject = () => {
         <div className="boxcontainer">
           <div className='single-project'>
 
-            {/* Update the img src to use the loaded image */}
-            <img 
-              className='project-title-img' 
-              src={projectImage} 
-              alt={project.imageAlt} 
+            <img
+              className='project-title-img'
+              src={projectImage}
+              alt={project.imageAlt}
             />
 
             <h2>{project.title}</h2>

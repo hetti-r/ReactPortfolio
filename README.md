@@ -9,7 +9,7 @@ Framer Motion - Animation library for React
 
 ## Features
 
-Responsive Design
-Project Showcase
-Skills Section
-Animations
+- Responsive Design
+- Project Showcase
+- Skills Section
+- Animations

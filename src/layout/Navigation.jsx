@@ -55,7 +55,6 @@ const Navigation = () => {
   const handleProjectsClick = (e) => {
     e.preventDefault();
     setMenuOpen(false);
-    // Use replace instead of push to avoid scroll state issues
     navigate('/projects', { replace: true });
   };
 

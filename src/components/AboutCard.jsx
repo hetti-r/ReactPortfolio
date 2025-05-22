@@ -23,8 +23,7 @@ const AboutCard = () => {
                     ease: "easeInOut"
                 }
             });
-
-            // Handle scrolling with a smoother transition
+            // Scroll to the target section if coming from projects
             if (location.state?.fromProjects && location.state.targetSection) {
                 const element = document.getElementById(location.state.targetSection);
                 if (element) {
